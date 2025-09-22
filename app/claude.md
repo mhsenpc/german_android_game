@@ -117,8 +117,14 @@ Questions, options, and answers are stored in a JSON file.
       "answer": "wohne",
       "hint": "با ضمیر ich (من) فعل پایانه -e می‌گیرد"
     }
+  ]
 }
 ```
+
+**Background Loading:**
+- Each quiz activity must load the background image from the JSON file's "background" field
+- The background path (e.g., "images/backgrounds/berlin.png") should be loaded dynamically for each level
+- Apply the background image to the quiz activity layout when the level starts
 
 ## Extra Features
 
