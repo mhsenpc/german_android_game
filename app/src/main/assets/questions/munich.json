@@ -1,0 +1,96 @@
+{
+  "level": 8,
+  "city": "Munich",
+  "questions": [
+    {
+      "sentence": "gestern .... ich Fußball gespielt",
+      "options": ["habe", "hat", "bin", "sein"],
+      "answer": "habe",
+      "hint": "فعل spielen با haben تصریف می‌شود، ich habe gespielt (من بازی کردم)"
+    },
+    {
+      "sentence": "wir .... gestern ins Kino gegangen",
+      "options": ["sind", "haben", "waren", "hatten"],
+      "answer": "sind",
+      "hint": "فعل gehen فعل حرکتی است و با sein تصریف می‌شود، wir sind gegangen"
+    },
+    {
+      "sentence": "sie .... ein Buch gelesen",
+      "options": ["hat", "ist", "war", "hatte"],
+      "answer": "hat",
+      "hint": "فعل lesen با haben تصریف می‌شود، sie hat gelesen (او خواند)"
+    },
+    {
+      "sentence": "ich .... nach Berlin gefahren",
+      "options": ["bin", "habe", "war", "hatte"],
+      "answer": "bin",
+      "hint": "فعل fahren فعل حرکتی است و با sein تصریف می‌شود، ich bin gefahren"
+    },
+    {
+      "sentence": "du .... gestern zu Hause geblieben",
+      "options": ["bist", "hast", "warst", "hattest"],
+      "answer": "bist",
+      "hint": "فعل bleiben با sein تصریف می‌شود، du bist geblieben (تو ماندی)"
+    },
+    {
+      "sentence": "er .... seine Hausaufgaben gemacht",
+      "options": ["hat", "ist", "war", "hatte"],
+      "answer": "hat",
+      "hint": "فعل machen با haben تصریف می‌شود، er hat gemacht (او انجام داد)"
+    },
+    {
+      "sentence": "wir .... Pizza gegessen",
+      "options": ["haben", "sind", "waren", "hatten"],
+      "answer": "haben",
+      "hint": "فعل essen با haben تصریف می‌شود، wir haben gegessen (ما خوردیم)"
+    },
+    {
+      "sentence": "sie .... um 8 Uhr aufgestanden",
+      "options": ["ist", "hat", "war", "hatte"],
+      "answer": "ist",
+      "hint": "فعل aufstehen فعل حرکتی است و با sein تصریف می‌شود، sie ist aufgestanden"
+    },
+    {
+      "sentence": "ihr .... den Film gesehen",
+      "options": ["habt", "seid", "wart", "hattet"],
+      "answer": "habt",
+      "hint": "فعل sehen با haben تصریف می‌شود، ihr habt gesehen (شما دیدید)"
+    },
+    {
+      "sentence": "ich .... gestern müde ....",
+      "options": ["war", "bin", "habe", "hatte"],
+      "answer": "war",
+      "hint": "برای صفت در گذشته از Präteritum استفاده می‌کنیم، ich war müde (من خسته بودم)"
+    },
+    {
+      "sentence": "du .... das Fenster geöffnet",
+      "options": ["hast", "bist", "warst", "hattest"],
+      "answer": "hast",
+      "hint": "فعل öffnen با haben تصریف می‌شود، du hast geöffnet (تو باز کردی)"
+    },
+    {
+      "sentence": "wir .... früh eingeschlafen",
+      "options": ["sind", "haben", "waren", "hatten"],
+      "answer": "sind",
+      "hint": "فعل einschlafen فعل حرکتی/تغییر حالت است و با sein تصریف می‌شود"
+    },
+    {
+      "sentence": "er .... viel Geld ....",
+      "options": ["hatte", "war", "ist", "hat"],
+      "answer": "hatte",
+      "hint": "برای داشتن در گذشته از Präteritum استفاده می‌کنیم، er hatte Geld (او پول داشت)"
+    },
+    {
+      "sentence": "sie .... gestern angekommen",
+      "options": ["ist", "hat", "war", "hatte"],
+      "answer": "ist",
+      "hint": "فعل ankommen فعل حرکتی است و با sein تصریف می‌شود، sie ist angekommen"
+    },
+    {
+      "sentence": "ich .... das Auto gewaschen",
+      "options": ["habe", "bin", "war", "hatte"],
+      "answer": "habe",
+      "hint": "فعل waschen با haben تصریف می‌شود، ich habe gewaschen (من شستم)"
+    }
+  ]
+}

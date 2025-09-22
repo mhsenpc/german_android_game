@@ -1,0 +1,96 @@
+{
+  "level": 1,
+  "city": "Hamburg",
+  "questions": [
+    {
+      "sentence": "ich möchte .... gehen",
+      "options": ["ins Kino", "im Tisch", "der Hund", "schnell"],
+      "answer": "ins Kino",
+      "hint": "فعل möchte به مکان یا هدف نیاز دارد، ins Kino (به سینما) منطقی است"
+    },
+    {
+      "sentence": "wir können .... sprechen",
+      "options": ["Deutsch", "das Auto", "im Bett", "morgen"],
+      "answer": "Deutsch",
+      "hint": "فعل sprechen (صحبت کردن) به زبان نیاز دارد، Deutsch مناسب است"
+    },
+    {
+      "sentence": "du sollst deine .... machen",
+      "options": ["Hausaufgaben", "Kino", "schnell", "gestern"],
+      "answer": "Hausaufgaben",
+      "hint": "فعل machen (انجام دادن) با Hausaufgaben (تکالیف) منطقی است"
+    },
+    {
+      "sentence": "ich will morgen .... kaufen",
+      "options": ["ein Auto", "ins Restaurant", "sehr gut", "arbeiten"],
+      "answer": "ein Auto",
+      "hint": "فعل kaufen (خریدن) به مفعول نیاز دارد، ein Auto مناسب است"
+    },
+    {
+      "sentence": "sie muss heute .... arbeiten",
+      "options": ["lange", "das Buch", "zum Arzt", "essen"],
+      "answer": "lange",
+      "hint": "فعل arbeiten به قید زمان نیاز دارد، lange (طولانی) مناسب است"
+    },
+    {
+      "sentence": "wir dürfen hier nicht ....",
+      "options": ["rauchen", "das Haus", "am Montag", "schön"],
+      "answer": "rauchen",
+      "hint": "دربان nicht (نه) فعل اصلی لازم است، rauchen (سیگار کشیدن) منطقی است"
+    },
+    {
+      "sentence": "ich kann sehr gut ....",
+      "options": ["schwimmen", "der Tisch", "im Park", "gestern"],
+      "answer": "schwimmen",
+      "hint": "بعد از sehr gut (خیلی خوب) فعل اصلی می‌آید، schwimmen مناسب است"
+    },
+    {
+      "sentence": "du musst .... zum Arzt gehen",
+      "options": ["heute", "das Auto", "sprechen", "kaufen"],
+      "answer": "heute",
+      "hint": "جمله به قید زمان نیاز دارد، heute (امروز) مناسب است"
+    },
+    {
+      "sentence": "wir möchten am Wochenende .... fahren",
+      "options": ["nach Berlin", "das Buch", "essen", "schlafen"],
+      "answer": "nach Berlin",
+      "hint": "فعل fahren (رفتن) به مقصد نیاز دارد، nach Berlin مناسب است"
+    },
+    {
+      "sentence": "sie soll ihre .... anrufen",
+      "options": ["Mutter", "ins Kino", "schnell", "arbeiten"],
+      "answer": "Mutter",
+      "hint": "فعل anrufen (تماس گرفتن) به شخص نیاز دارد، Mutter مناسب است"
+    },
+    {
+      "sentence": "ich will nicht .... essen",
+      "options": ["zu viel", "das Auto", "nach Hause", "sprechen"],
+      "answer": "zu viel",
+      "hint": "فعل essen به قید کمیت نیاز دارد، zu viel (زیاد) مناسب است"
+    },
+    {
+      "sentence": "du kannst .... Klavier spielen",
+      "options": ["sehr schön", "das Haus", "morgen", "kaufen"],
+      "answer": "sehr schön",
+      "hint": "فعل spielen به قید کیفیت نیاز دارد، sehr schön مناسب است"
+    },
+    {
+      "sentence": "wir müssen .... pünktlich sein",
+      "options": ["immer", "das Buch", "ins Restaurant", "arbeiten"],
+      "answer": "immer",
+      "hint": "صفت pünktlich به قید تکرار نیاز دارد، immer (همیشه) مناسب است"
+    },
+    {
+      "sentence": "sie darf nicht .... trinken",
+      "options": ["Alkohol", "nach Hause", "schnell", "schlafen"],
+      "answer": "Alkohol",
+      "hint": "فعل trinken به مفعول نیاز دارد، Alkohol منطقی است"
+    },
+    {
+      "sentence": "ich sollte mehr .... lernen",
+      "options": ["Deutsch", "das Auto", "ins Bett", "essen"],
+      "answer": "Deutsch",
+      "hint": "فعل lernen به درس یا زبان نیاز دارد، Deutsch مناسب است"
+    }
+  ]
+}

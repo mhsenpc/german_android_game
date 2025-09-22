@@ -1,0 +1,96 @@
+{
+  "level": 2,
+  "city": "Berlin",
+  "questions": [
+    {
+      "sentence": "ich .... in Berlin",
+      "options": ["wohne", "wohnt", "wohnst", "wohnen"],
+      "answer": "wohne",
+      "hint": "با ضمیر ich (من) فعل پایانه -e می‌گیرد"
+    },
+    {
+      "sentence": "du .... sehr gut Deutsch",
+      "options": ["sprichst", "spreche", "spricht", "sprechen"],
+      "answer": "sprichst",
+      "hint": "با ضمیر du (تو) فعل پایانه -st می‌گیرد"
+    },
+    {
+      "sentence": "er .... jeden Tag Kaffee",
+      "options": ["trinkt", "trinke", "trinkst", "trinken"],
+      "answer": "trinkt",
+      "hint": "با ضمیر er (او مذکر) فعل پایانه -t می‌گیرد"
+    },
+    {
+      "sentence": "wir .... am Wochenende ins Kino",
+      "options": ["gehen", "geht", "gehst", "gehe"],
+      "answer": "gehen",
+      "hint": "با ضمیر wir (ما) فعل بدون تغییر به همان شکل اصلی باقی می‌ماند"
+    },
+    {
+      "sentence": "ihr .... Pizza zum Abendessen",
+      "options": ["esst", "esse", "isst", "essen"],
+      "answer": "esst",
+      "hint": "با ضمیر ihr (شما جمع) فعل پایانه -t می‌گیرد"
+    },
+    {
+      "sentence": "sie .... ein interessantes Buch",
+      "options": ["lesen", "lese", "liest", "lest"],
+      "answer": "lesen",
+      "hint": "با ضمیر sie (آن‌ها) فعل بدون تغییر به همان شکل اصلی باقی می‌ماند"
+    },
+    {
+      "sentence": "ich .... morgen nach Hamburg",
+      "options": ["fahre", "fährst", "fährt", "fahren"],
+      "answer": "fahre",
+      "hint": "با ضمیر ich (من) فعل پایانه -e می‌گیرد"
+    },
+    {
+      "sentence": "du .... deine Hausaufgaben",
+      "options": ["machst", "mache", "macht", "machen"],
+      "answer": "machst",
+      "hint": "با ضمیر du (تو) فعل پایانه -st می‌گیرد"
+    },
+    {
+      "sentence": "sie .... heute nicht zur Arbeit",
+      "options": ["kommt", "komme", "kommst", "kommen"],
+      "answer": "kommt",
+      "hint": "با ضمیر sie (او مؤنث) فعل پایانه -t می‌گیرد"
+    },
+    {
+      "sentence": "wir .... gerne Musik",
+      "options": ["hören", "höre", "hörst", "hört"],
+      "answer": "hören",
+      "hint": "با ضمیر wir (ما) فعل بدون تغییر به همان شکل اصلی باقی می‌ماند"
+    },
+    {
+      "sentence": "ihr .... zu spät zur Schule",
+      "options": ["kommt", "komme", "kommst", "kommen"],
+      "answer": "kommt",
+      "hint": "با ضمیر ihr (شما جمع) فعل پایانه -t می‌گیرد"
+    },
+    {
+      "sentence": "ich .... meine Familie am Sonntag",
+      "options": ["besuche", "besuchst", "besucht", "besuchen"],
+      "answer": "besuche",
+      "hint": "با ضمیر ich (من) فعل پایانه -e می‌گیرد"
+    },
+    {
+      "sentence": "du .... sehr schnell",
+      "options": ["läufst", "laufe", "läuft", "laufen"],
+      "answer": "läufst",
+      "hint": "با ضمیر du (تو) فعل پایانه -st می‌گیرد و حرف صدادار تغییر می‌کند"
+    },
+    {
+      "sentence": "er .... den ganzen Tag",
+      "options": ["arbeitet", "arbeite", "arbeitest", "arbeiten"],
+      "answer": "arbeitet",
+      "hint": "با ضمیر er (او مذکر) فعل پایانه -t می‌گیرد"
+    },
+    {
+      "sentence": "sie .... ihre Freunde oft",
+      "options": ["sehen", "sehe", "siehst", "sieht"],
+      "answer": "sehen",
+      "hint": "با ضمیر sie (آن‌ها) فعل بدون تغییر به همان شکل اصلی باقی می‌ماند"
+    }
+  ]
+}

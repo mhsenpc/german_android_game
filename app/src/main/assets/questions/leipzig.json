@@ -1,0 +1,96 @@
+{
+  "level": 3,
+  "city": "Leipzig",
+  "questions": [
+    {
+      "sentence": "das ist .... Buch",
+      "options": ["mein", "ich", "du", "mich"],
+      "answer": "mein",
+      "hint": "برای نشان دادن مالکیت از ضمیر ملکی mein (کتاب من) استفاده می‌کنیم"
+    },
+    {
+      "sentence": "ich sehe .... im Park",
+      "options": ["ihn", "er", "ihm", "seine"],
+      "answer": "ihn",
+      "hint": "فعل sehen حالت مفعولی می‌خواهد، ihn = او را (مذکر) در حالت مفعولی"
+    },
+    {
+      "sentence": "wo ist .... Auto?",
+      "options": ["dein", "du", "dir", "dich"],
+      "answer": "dein",
+      "hint": "برای پرسیدن درباره مالکیت از ضمیر ملکی dein (ماشین تو) استفاده می‌کنیم"
+    },
+    {
+      "sentence": "ich gebe .... das Geschenk",
+      "options": ["ihr", "sie", "ihren", "ihre"],
+      "answer": "ihr",
+      "hint": "فعل geben به مفعول غیرمستقیم نیاز دارد، ihr = به او (مؤنث) در حالت سوم"
+    },
+    {
+      "sentence": ".... kommst morgen, oder?",
+      "options": ["Du", "Dich", "Dir", "Dein"],
+      "answer": "Du",
+      "hint": "در ابتدای جمله فاعل لازم است، Du = تو در حالت فاعلی"
+    },
+    {
+      "sentence": "das sind .... Freunde",
+      "options": ["unsere", "wir", "uns", "unser"],
+      "answer": "unsere",
+      "hint": "برای نشان دادن مالکیت جمع از unsere (دوستان ما) استفاده می‌کنیم"
+    },
+    {
+      "sentence": "ich rufe .... heute an",
+      "options": ["euch", "ihr", "euer", "eure"],
+      "answer": "euch",
+      "hint": "فعل anrufen حالت مفعولی می‌خواهد، euch = شما را (جمع)"
+    },
+    {
+      "sentence": ".... Katze ist sehr süß",
+      "options": ["Ihre", "Sie", "Ihnen", "Sich"],
+      "answer": "Ihre",
+      "hint": "برای نشان دادن مالکیت مودبانه از Ihre (گربه شما) استفاده می‌کنیم"
+    },
+    {
+      "sentence": "ich helfe .... gerne",
+      "options": ["ihm", "er", "ihn", "sein"],
+      "answer": "ihm",
+      "hint": "فعل helfen حالت سوم می‌خواهد، ihm = به او (مذکر) کمک کردن"
+    },
+    {
+      "sentence": ".... haben viel Arbeit",
+      "options": ["Wir", "Uns", "Unser", "Unsere"],
+      "answer": "Wir",
+      "hint": "در ابتدای جمله فاعل لازم است، Wir = ما در حالت فاعلی"
+    },
+    {
+      "sentence": "ich kenne .... nicht",
+      "options": ["sie", "ihr", "ihnen", "ihre"],
+      "answer": "sie",
+      "hint": "فعل kennen حالت مفعولی می‌خواهد، sie = آن‌ها را (یا او را مؤنث)"
+    },
+    {
+      "sentence": "wo ist .... Schlüssel?",
+      "options": ["euer", "ihr", "euch", "eure"],
+      "answer": "euer",
+      "hint": "برای پرسیدن درباره مالکیت جمع از euer (کلید شما) استفاده می‌کنیم"
+    },
+    {
+      "sentence": "ich denke an ....",
+      "options": ["dich", "du", "dir", "dein"],
+      "answer": "dich",
+      "hint": "حرف اضافه an حالت مفعولی می‌خواهد، dich = به تو فکر کردن"
+    },
+    {
+      "sentence": ".... Name ist Peter",
+      "options": ["Sein", "Er", "Ihn", "Ihm"],
+      "answer": "Sein",
+      "hint": "برای نشان دادن مالکیت از ضمیر ملکی sein (نام او) استفاده می‌کنیم"
+    },
+    {
+      "sentence": "ich spreche mit ....",
+      "options": ["ihnen", "sie", "ihr", "ihre"],
+      "answer": "ihnen",
+      "hint": "حرف اضافه mit حالت سوم می‌خواهد، ihnen = با آن‌ها صحبت کردن"
+    }
+  ]
+}

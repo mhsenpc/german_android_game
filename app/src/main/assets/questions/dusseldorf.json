@@ -1,0 +1,96 @@
+{
+  "level": 4,
+  "city": "Düsseldorf",
+  "questions": [
+    {
+      "sentence": "ich hätte gern .... Kaffee",
+      "options": ["ein", "eine", "die", "der"],
+      "answer": "ein",
+      "hint": "کلمه Kaffee مذکر است (der Kaffee)، پس برای حالت نامعین از ein استفاده می‌کنیم"
+    },
+    {
+      "sentence": ".... Hund ist sehr groß",
+      "options": ["Der", "Die", "Das", "Den"],
+      "answer": "Der",
+      "hint": "کلمه Hund مذکر است، پس در حالت فاعلی از der استفاده می‌کنیم"
+    },
+    {
+      "sentence": "ich kaufe .... Buch",
+      "options": ["ein", "eine", "der", "die"],
+      "answer": "ein",
+      "hint": "کلمه Buch خنثی است (das Buch)، فعل kaufe حالت مفعولی می‌خواهد اما ein تغییر نمی‌کند"
+    },
+    {
+      "sentence": ".... Katze schläft auf dem Sofa",
+      "options": ["Die", "Der", "Das", "Den"],
+      "answer": "Die",
+      "hint": "کلمه Katze مؤنث است، پس در حالت فاعلی از die استفاده می‌کنیم"
+    },
+    {
+      "sentence": "er trinkt .... Wasser",
+      "options": ["das", "der", "die", "den"],
+      "answer": "das",
+      "hint": "کلمه Wasser خنثی است و فعل trinkt حالت مفعولی می‌خواهد اما das تغییر نمی‌کند"
+    },
+    {
+      "sentence": "ich brauche .... Tasche",
+      "options": ["eine", "ein", "der", "das"],
+      "answer": "eine",
+      "hint": "کلمه Tasche مؤنث است (die Tasche)، پس برای حالت نامعین از eine استفاده می‌کنیم"
+    },
+    {
+      "sentence": ".... Auto fährt schnell",
+      "options": ["Das", "Der", "Die", "Den"],
+      "answer": "Das",
+      "hint": "کلمه Auto خنثی است، پس در حالت فاعلی از das استفاده می‌کنیم"
+    },
+    {
+      "sentence": "wir essen .... Pizza",
+      "options": ["eine", "ein", "der", "das"],
+      "answer": "eine",
+      "hint": "کلمه Pizza مؤنث است (die Pizza)، پس برای حالت نامعین از eine استفاده می‌کنیم"
+    },
+    {
+      "sentence": ".... Mann arbeitet im Büro",
+      "options": ["Der", "Die", "Das", "Den"],
+      "answer": "Der",
+      "hint": "کلمه Mann مذکر است، پس در حالت فاعلی از der استفاده می‌کنیم"
+    },
+    {
+      "sentence": "sie liest .... Zeitung",
+      "options": ["die", "der", "das", "den"],
+      "answer": "die",
+      "hint": "کلمه Zeitung مؤنث است و فعل liest حالت مفعولی می‌خواهد اما die تغییر نمی‌کند"
+    },
+    {
+      "sentence": "ich sehe .... Baum im Garten",
+      "options": ["einen", "eine", "ein", "der"],
+      "answer": "einen",
+      "hint": "کلمه Baum مذکر است (der Baum) و فعل sehe حالت مفعولی می‌خواهد، پس ein به einen تبدیل می‌شود"
+    },
+    {
+      "sentence": ".... Frau kocht das Essen",
+      "options": ["Die", "Der", "Das", "Den"],
+      "answer": "Die",
+      "hint": "کلمه Frau مؤنث است، پس در حالت فاعلی از die استفاده می‌کنیم"
+    },
+    {
+      "sentence": "er hat .... Problem",
+      "options": ["ein", "eine", "der", "die"],
+      "answer": "ein",
+      "hint": "کلمه Problem خنثی است (das Problem)، پس برای حالت نامعین از ein استفاده می‌کنیم"
+    },
+    {
+      "sentence": ".... Kind spielt im Park",
+      "options": ["Das", "Der", "Die", "Den"],
+      "answer": "Das",
+      "hint": "کلمه Kind خنثی است، پس در حالت فاعلی از das استفاده می‌کنیم"
+    },
+    {
+      "sentence": "wir besuchen .... Museum",
+      "options": ["das", "der", "die", "den"],
+      "answer": "das",
+      "hint": "کلمه Museum خنثی است و فعل besuchen حالت مفعولی می‌خواهد اما das تغییر نمی‌کند"
+    }
+  ]
+}

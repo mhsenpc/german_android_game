@@ -1,0 +1,96 @@
+{
+  "level": 6,
+  "city": "Frankfurt",
+  "questions": [
+    {
+      "sentence": "ich gehe .... Schule",
+      "options": ["zur", "im", "beim", "durch"],
+      "answer": "zur",
+      "hint": "فعل gehen با مقصد از zu استفاده می‌کند، zur = zu + der (به مدرسه)"
+    },
+    {
+      "sentence": "das Buch liegt .... Tisch",
+      "options": ["auf dem", "in die", "zu der", "von dem"],
+      "answer": "auf dem",
+      "hint": "روی میز بودن از حرف اضافه auf با حالت سوم (dem) استفاده می‌کند"
+    },
+    {
+      "sentence": "wir fahren .... Deutschland",
+      "options": ["nach", "zu", "in", "auf"],
+      "answer": "nach",
+      "hint": "برای رفتن به کشورها از حرف اضافه nach استفاده می‌کنیم"
+    },
+    {
+      "sentence": "der Hund sitzt .... Auto",
+      "options": ["im", "am", "zum", "vom"],
+      "answer": "im",
+      "hint": "داخل ماشین بودن از in با حالت سوم استفاده می‌کند، im = in + dem"
+    },
+    {
+      "sentence": "ich komme .... Arbeit",
+      "options": ["von der", "zu der", "in die", "auf die"],
+      "answer": "von der",
+      "hint": "آمدن از جایی با von استفاده می‌کند، von der = از کار"
+    },
+    {
+      "sentence": "wir treffen uns .... Park",
+      "options": ["im", "zum", "vom", "durch"],
+      "answer": "im",
+      "hint": "ملاقات در پارک با in + حالت سوم، im = in + dem"
+    },
+    {
+      "sentence": "das Geschenk ist .... meine Mutter",
+      "options": ["für", "zu", "von", "mit"],
+      "answer": "für",
+      "hint": "هدیه برای کسی با حرف اضافه für (برای) استفاده می‌کند"
+    },
+    {
+      "sentence": "ich fahre .... Bus zur Arbeit",
+      "options": ["mit dem", "in den", "zu dem", "von dem"],
+      "answer": "mit dem",
+      "hint": "رفتن با وسیله نقلیه از mit + حالت سوم استفاده می‌کند"
+    },
+    {
+      "sentence": "der Schlüssel ist .... Tasche",
+      "options": ["in der", "auf der", "zu der", "von der"],
+      "answer": "in der",
+      "hint": "کلید داخل کیف با in + حالت سوم، in der استفاده می‌کند"
+    },
+    {
+      "sentence": "wir gehen .... Kino",
+      "options": ["ins", "im", "zum", "vom"],
+      "answer": "ins",
+      "hint": "رفتن به سینما از in استفاده می‌کند، ins = in + das"
+    },
+    {
+      "sentence": "das Foto hängt .... Wand",
+      "options": ["an der", "in der", "auf der", "zu der"],
+      "answer": "an der",
+      "hint": "آویزان بودن روی دیوار از an + حالت سوم استفاده می‌کند"
+    },
+    {
+      "sentence": "ich laufe .... den Park",
+      "options": ["durch", "über", "unter", "zwischen"],
+      "answer": "durch",
+      "hint": "عبور کردن از پارک با حرف اضافه durch (از میان) استفاده می‌کند"
+    },
+    {
+      "sentence": "der Brief kommt .... England",
+      "options": ["aus", "von", "zu", "nach"],
+      "answer": "aus",
+      "hint": "آمدن از کشور با حرف اضافه aus استفاده می‌کند"
+    },
+    {
+      "sentence": "wir sitzen .... Restaurant",
+      "options": ["im", "zum", "vom", "durch"],
+      "answer": "im",
+      "hint": "نشستن در رستوران با in + حالت سوم، im = in + dem"
+    },
+    {
+      "sentence": "ich stelle die Blume .... den Tisch",
+      "options": ["auf", "in", "an", "unter"],
+      "answer": "auf",
+      "hint": "گذاشتن روی میز با حرف اضافه auf + حالت چهارم استفاده می‌کند"
+    }
+  ]
+}

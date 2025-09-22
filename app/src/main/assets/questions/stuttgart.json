@@ -1,0 +1,96 @@
+{
+  "level": 7,
+  "city": "Stuttgart",
+  "questions": [
+    {
+      "sentence": "ich hätte gern ein .... Kaffee",
+      "options": ["kleines", "kleine", "kleiner", "kleinen"],
+      "answer": "kleines",
+      "hint": "کافه خنثی است (das) و با ein می‌آید، پس صفت پایانه -es می‌گیرد"
+    },
+    {
+      "sentence": "das ist eine .... Frau",
+      "options": ["schöne", "schönes", "schöner", "schönen"],
+      "answer": "schöne",
+      "hint": "زن مؤنث است و با eine می‌آید، پس صفت پایانه -e می‌گیرد"
+    },
+    {
+      "sentence": "der .... Mann arbeitet hier",
+      "options": ["alte", "altes", "alter", "alten"],
+      "answer": "alte",
+      "hint": "مرد مذکر است و با der می‌آید، پس صفت پایانه -e می‌گیرد"
+    },
+    {
+      "sentence": "ich kaufe einen .... Apfel",
+      "options": ["roten", "rote", "roter", "rotes"],
+      "answer": "roten",
+      "hint": "سیب مذکر است و در حالت مفعولی (einen) پایانه -en می‌گیرد"
+    },
+    {
+      "sentence": "die .... Katze schläft",
+      "options": ["schwarze", "schwarzes", "schwarzer", "schwarzen"],
+      "answer": "schwarze",
+      "hint": "گربه مؤنث است و با die می‌آید، پس صفت پایانه -e می‌گیرد"
+    },
+    {
+      "sentence": "wir haben ein .... Auto",
+      "options": ["neues", "neue", "neuer", "neuen"],
+      "answer": "neues",
+      "hint": "ماشین خنثی است (das) و با ein می‌آید، پس صفت پایانه -es می‌گیرد"
+    },
+    {
+      "sentence": "das .... Buch ist interessant",
+      "options": ["große", "großes", "großer", "großen"],
+      "answer": "große",
+      "hint": "کتاب خنثی است و با das می‌آید، پس صفت پایانه -e می‌گیرد"
+    },
+    {
+      "sentence": "sie trägt eine .... Jacke",
+      "options": ["warme", "warmes", "warmer", "warmen"],
+      "answer": "warme",
+      "hint": "کت مؤنث است و با eine می‌آید، پس صفت پایانه -e می‌گیرد"
+    },
+    {
+      "sentence": "ich sehe den .... Hund",
+      "options": ["großen", "große", "großer", "großes"],
+      "answer": "großen",
+      "hint": "سگ مذکر است و در حالت مفعولی (den) پایانه -en می‌گیرد"
+    },
+    {
+      "sentence": "der .... Baum ist hoch",
+      "options": ["grüne", "grünes", "grüner", "grünen"],
+      "answer": "grüne",
+      "hint": "درخت مذکر است و با der می‌آید، پس صفت پایانه -e می‌گیرد"
+    },
+    {
+      "sentence": "wir essen eine .... Pizza",
+      "options": ["leckere", "leckeres", "leckerer", "leckeren"],
+      "answer": "leckere",
+      "hint": "پیتزا مؤنث است و با eine می‌آید، پس صفت پایانه -e می‌گیرد"
+    },
+    {
+      "sentence": "das ist ein .... Haus",
+      "options": ["schönes", "schöne", "schöner", "schönen"],
+      "answer": "schönes",
+      "hint": "خانه خنثی است (das) و با ein می‌آید، پس صفت پایانه -es می‌گیرد"
+    },
+    {
+      "sentence": "ich lese die .... Zeitung",
+      "options": ["neue", "neues", "neuer", "neuen"],
+      "answer": "neue",
+      "hint": "روزنامه مؤنث است و در حالت مفعولی (die) پایانه -e می‌گیرد"
+    },
+    {
+      "sentence": "er hat einen .... Computer",
+      "options": ["schnellen", "schnelle", "schneller", "schnelles"],
+      "answer": "schnellen",
+      "hint": "کامپیوتر مذکر است و در حالت مفعولی (einen) پایانه -en می‌گیرد"
+    },
+    {
+      "sentence": "die .... Blume ist rot",
+      "options": ["kleine", "kleines", "kleiner", "kleinen"],
+      "answer": "kleine",
+      "hint": "گل مؤنث است و با die می‌آید، پس صفت پایانه -e می‌گیرد"
+    }
+  ]
+}

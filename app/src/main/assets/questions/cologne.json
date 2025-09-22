@@ -1,0 +1,96 @@
+{
+  "level": 5,
+  "city": "Cologne",
+  "questions": [
+    {
+      "sentence": "ich sehe zwei ....",
+      "options": ["Autos", "Auto", "Auton", "Autoe"],
+      "answer": "Autos",
+      "hint": "کلمه Auto در حالت جمع به Autos تبدیل می‌شود (پایانه -s)"
+    },
+    {
+      "sentence": "die .... sind sehr groß",
+      "options": ["Häuser", "Haus", "Hauses", "Häuse"],
+      "answer": "Häuser",
+      "hint": "کلمه Haus در حالت جمع به Häuser تبدیل می‌شود (تغییر حرف صدادار + er)"
+    },
+    {
+      "sentence": "wir haben drei ....",
+      "options": ["Kinder", "Kind", "Kindes", "Kinde"],
+      "answer": "Kinder",
+      "hint": "کلمه Kind در حالت جمع به Kinder تبدیل می‌شود (تغییر حرف صدادار + er)"
+    },
+    {
+      "sentence": "ich kaufe fünf ....",
+      "options": ["Äpfel", "Apfel", "Apfels", "Äpfele"],
+      "answer": "Äpfel",
+      "hint": "کلمه Apfel در حالت جمع به Äpfel تبدیل می‌شود (تغییر حرف صدادار)"
+    },
+    {
+      "sentence": "die .... arbeiten hier",
+      "options": ["Frauen", "Frau", "Fraues", "Fraue"],
+      "answer": "Frauen",
+      "hint": "کلمه Frau در حالت جمع به Frauen تبدیل می‌شود (پایانه -en)"
+    },
+    {
+      "sentence": "wir lesen viele ....",
+      "options": ["Bücher", "Buch", "Buches", "Büche"],
+      "answer": "Bücher",
+      "hint": "کلمه Buch در حالت جمع به Bücher تبدیل می‌شود (تغییر حرف صدادار + er)"
+    },
+    {
+      "sentence": "ich höre die ....",
+      "options": ["Vögel", "Vogel", "Vogels", "Vögele"],
+      "answer": "Vögel",
+      "hint": "کلمه Vogel در حالت جمع به Vögel تبدیل می‌شود (تغییر حرف صدادار)"
+    },
+    {
+      "sentence": "die .... sind rot",
+      "options": ["Blumen", "Blume", "Blumes", "Blumee"],
+      "answer": "Blumen",
+      "hint": "کلمه Blume در حالت جمع به Blumen تبدیل می‌شود (پایانه -n)"
+    },
+    {
+      "sentence": "wir haben zwei ....",
+      "options": ["Katzen", "Katze", "Katzes", "Katzee"],
+      "answer": "Katzen",
+      "hint": "کلمه Katze در حالت جمع به Katzen تبدیل می‌شود (پایانه -n)"
+    },
+    {
+      "sentence": "ich sehe vier ....",
+      "options": ["Tische", "Tisch", "Tisches", "Tischee"],
+      "answer": "Tische",
+      "hint": "کلمه Tisch در حالت جمع به Tische تبدیل می‌شود (پایانه -e)"
+    },
+    {
+      "sentence": "die .... sind klein",
+      "options": ["Mäuse", "Maus", "Mauses", "Mäusee"],
+      "answer": "Mäuse",
+      "hint": "کلمه Maus در حالت جمع به Mäuse تبدیل می‌شود (تغییر حرف صدادار + e)"
+    },
+    {
+      "sentence": "wir besuchen unsere ....",
+      "options": ["Freunde", "Freund", "Freundes", "Freundee"],
+      "answer": "Freunde",
+      "hint": "کلمه Freund در حالت جمع به Freunde تبدیل می‌شود (پایانه -e)"
+    },
+    {
+      "sentence": "ich esse gerne ....",
+      "options": ["Tomaten", "Tomate", "Tomates", "Tomatee"],
+      "answer": "Tomaten",
+      "hint": "کلمه Tomate در حالت جمع به Tomaten تبدیل می‌شود (پایانه -n)"
+    },
+    {
+      "sentence": "die .... fahren schnell",
+      "options": ["Züge", "Zug", "Zuges", "Zügee"],
+      "answer": "Züge",
+      "hint": "کلمه Zug در حالت جمع به Züge تبدیل می‌شود (تغییر حرف صدادار + e)"
+    },
+    {
+      "sentence": "wir kaufen neue ....",
+      "options": ["Schuhe", "Schuh", "Schuhs", "Schuhee"],
+      "answer": "Schuhe",
+      "hint": "کلمه Schuh در حالت جمع به Schuhe تبدیل می‌شود (پایانه -e)"
+    }
+  ]
+}
