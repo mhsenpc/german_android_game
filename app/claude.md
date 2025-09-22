@@ -109,6 +109,7 @@ Questions, options, and answers are stored in a JSON file.
 {
   "level": 2,
   "city": "Berlin",
+  "background": "images/backgrounds/berlin.png",
   "questions": [
     {
       "sentence": "ich .... in Berlin",

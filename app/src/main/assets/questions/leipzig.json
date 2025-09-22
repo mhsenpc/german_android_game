@@ -1,6 +1,7 @@
 {
   "level": 3,
   "city": "Leipzig",
+  "background": "images/backgrounds/leipzig.png",
   "questions": [
     {
       "sentence": "das ist .... Buch",

@@ -1,6 +1,7 @@
 {
   "level": 4,
   "city": "Düsseldorf",
+  "background": "images/backgrounds/dusseldorf.png",
   "questions": [
     {
       "sentence": "ich hätte gern .... Kaffee",

@@ -1,6 +1,7 @@
 {
   "level": 1,
   "city": "Hamburg",
+  "background": "images/backgrounds/hamburg.png",
   "questions": [
     {
       "sentence": "ich möchte .... gehen",

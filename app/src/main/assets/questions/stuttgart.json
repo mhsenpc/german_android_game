@@ -1,6 +1,7 @@
 {
   "level": 7,
   "city": "Stuttgart",
+  "background": "images/backgrounds/stuttgart.png",
   "questions": [
     {
       "sentence": "ich hätte gern ein .... Kaffee",

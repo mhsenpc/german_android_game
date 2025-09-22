@@ -1,6 +1,7 @@
 {
   "level": 2,
   "city": "Berlin",
+  "background": "images/backgrounds/berlin.png",
   "questions": [
     {
       "sentence": "ich .... in Berlin",
