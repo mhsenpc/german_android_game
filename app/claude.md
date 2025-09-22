@@ -130,6 +130,7 @@ Questions, options, and answers are stored in a JSON file.
 
 ### Audio Support
 - Use Android TTS (Text-to-Speech) to read the question aloud
+- use [ic_speaker.xml] with ImageButton 
 
 
 ### City Progression
