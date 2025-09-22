@@ -134,9 +134,9 @@ Questions, options, and answers are stored in a JSON file.
 
 
 ### City Progression
-- Display city landmarks or backgrounds
-- Unlock achievements for completing cities
-- Show progress map of Germany
+- on background use images/map.png
+- show different cities by their image in images/backgrounds/*.png
+- locked cities should be shown as a lock icon(create a drawable for lock icon)
 
 ## Tech Stack
 
