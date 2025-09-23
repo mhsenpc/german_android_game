@@ -72,6 +72,9 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     }
 
     private fun setupClickListeners() {
+        binding.backButton.setOnClickListener {
+            finish()
+        }
         binding.option1Button.setOnClickListener { checkAnswer(0) }
         binding.option2Button.setOnClickListener { checkAnswer(1) }
         binding.option3Button.setOnClickListener { checkAnswer(2) }
@@ -221,12 +224,7 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         val dialog = androidx.appcompat.app.AlertDialog.Builder(this)
             .setTitle("Level Complete!")
             .setMessage("Congratulations! You completed $currentCity with a score of $score")
-            .setPositiveButton("Continue") { _, _ ->
-                val intent = Intent(this, CityProgressionActivity::class.java).apply {
-                    putExtra("COMPLETED_CITY", currentCity)
-                    putExtra("FINAL_SCORE", score)
-                }
-                startActivity(intent)
+            .setPositiveButton("OK") { _, _ ->
                 finish()
             }
             .setCancelable(false)

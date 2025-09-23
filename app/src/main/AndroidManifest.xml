@@ -28,11 +28,6 @@
             android:exported="false"
             android:label="Quiz"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
-        <activity
-            android:name=".CityProgressionActivity"
-            android:exported="false"
-            android:label="City Progression"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
-    </application>
+            </application>
 
 </manifest>
