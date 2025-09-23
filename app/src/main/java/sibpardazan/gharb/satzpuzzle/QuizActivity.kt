@@ -201,7 +201,8 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     private fun speakQuestion() {
         val currentQuestion = questions[currentQuestionIndex]
-        val sentence = currentQuestion.getString("sentence").replace("....", "blank")
+        val correctAnswer = currentQuestion.getString("answer")
+        val sentence = currentQuestion.getString("sentence").replace("....", correctAnswer)
         tts.speak(sentence, TextToSpeech.QUEUE_FLUSH, null, "")
     }
 
