@@ -1,9 +1,9 @@
 package sibpardazan.gharb.satzpuzzle
 
 import android.content.Intent
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -62,8 +62,10 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         try {
             val assetManager = assets
             val inputStream = assetManager.open(backgroundPath)
-            val drawable = ContextCompat.getDrawable(this, R.drawable.default_background)
+            val drawable = Drawable.createFromStream(inputStream, null)
             binding.backgroundImage.setImageDrawable(drawable)
+            inputStream.close()
+
         } catch (e: Exception) {
             binding.backgroundImage.setImageResource(R.drawable.default_background)
         }
