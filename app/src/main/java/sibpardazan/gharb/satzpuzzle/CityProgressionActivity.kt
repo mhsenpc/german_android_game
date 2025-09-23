@@ -3,15 +3,15 @@ package sibpardazan.gharb.satzpuzzle
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import sibpardazan.gharb.satzpuzzle.databinding.ActivityMainBinding
+import sibpardazan.gharb.satzpuzzle.databinding.ActivityCityProgressionBinding
 
-class MainActivity : AppCompatActivity() {
+class CityProgressionActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityCityProgressionBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityCityProgressionBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setupCityClickListeners()
@@ -48,6 +48,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.munichMarker.setOnClickListener {
             startQuizActivity("munich", 8)
+        }
+
+        binding.aboutButton.setOnClickListener {
+            val intent = Intent(this, AboutActivity::class.java)
+            startActivity(intent)
         }
     }
 
