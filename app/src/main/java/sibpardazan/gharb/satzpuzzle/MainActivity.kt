@@ -1,47 +1,61 @@
 package sibpardazan.gharb.satzpuzzle
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import sibpardazan.gharb.satzpuzzle.ui.theme.SatzPuzzleTheme
+import androidx.appcompat.app.AppCompatActivity
+import sibpardazan.gharb.satzpuzzle.databinding.ActivityMainBinding
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            SatzPuzzleTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        setupCityClickListeners()
+    }
+
+    private fun setupCityClickListeners() {
+        binding.hamburgMarker.setOnClickListener {
+            startQuizActivity("hamburg", 1)
+        }
+
+        binding.berlinMarker.setOnClickListener {
+            startQuizActivity("berlin", 2)
+        }
+
+        binding.leipzigMarker.setOnClickListener {
+            startQuizActivity("leipzig", 3)
+        }
+
+        binding.dusseldorfMarker.setOnClickListener {
+            startQuizActivity("dusseldorf", 4)
+        }
+
+        binding.cologneMarker.setOnClickListener {
+            startQuizActivity("cologne", 5)
+        }
+
+        binding.frankfurtMarker.setOnClickListener {
+            startQuizActivity("frankfurt", 6)
+        }
+
+        binding.stuttgartMarker.setOnClickListener {
+            startQuizActivity("stuttgart", 7)
+        }
+
+        binding.munichMarker.setOnClickListener {
+            startQuizActivity("munich", 8)
         }
     }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    SatzPuzzleTheme {
-        Greeting("Android")
+    private fun startQuizActivity(city: String, level: Int) {
+        val intent = Intent(this, QuizActivity::class.java).apply {
+            putExtra("CITY_NAME", city)
+            putExtra("LEVEL_NUMBER", level)
+        }
+        startActivity(intent)
     }
 }
