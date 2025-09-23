@@ -23,7 +23,7 @@
         android:layout_height="48dp"
         android:background="@null"
         android:contentDescription="Hamburg"
-        android:src="@drawable/city_marker_hamburg"
+        android:src="@drawable/hamburg_marker"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
