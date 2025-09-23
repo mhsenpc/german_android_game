@@ -24,12 +24,13 @@
         android:background="@null"
         android:contentDescription="Hamburg"
         android:src="@drawable/hamburg_marker"
+        android:tooltipText="Hamburg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.35"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintVertical_bias="0.18" />
 
     <ImageButton
         android:id="@+id/berlinMarker"
@@ -38,9 +39,10 @@
         android:background="@null"
         android:contentDescription="Berlin"
         android:src="@drawable/berlin_marker"
+        android:tooltipText="Berlin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintHorizontal_bias="0.65"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.25" />
@@ -52,12 +54,13 @@
         android:background="@null"
         android:contentDescription="Leipzig"
         android:src="@drawable/leipzig_marker"
+        android:tooltipText="Leipzig"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintVertical_bias="0.32" />
 
     <ImageButton
         android:id="@+id/dusseldorfMarker"
@@ -66,12 +69,13 @@
         android:background="@null"
         android:contentDescription="Düsseldorf"
         android:src="@drawable/dusseldorf_marker"
+        android:tooltipText="Düsseldorf"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintVertical_bias="0.45" />
 
     <ImageButton
         android:id="@+id/cologneMarker"
@@ -80,12 +84,13 @@
         android:background="@null"
         android:contentDescription="Cologne"
         android:src="@drawable/cologne_marker"
+        android:tooltipText="Köln"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.32"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65" />
+        app:layout_constraintVertical_bias="0.55" />
 
     <ImageButton
         android:id="@+id/frankfurtMarker"
@@ -94,12 +99,13 @@
         android:background="@null"
         android:contentDescription="Frankfurt"
         android:src="@drawable/frankfurt_marker"
+        android:tooltipText="Frankfurt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.42"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintVertical_bias="0.55" />
 
     <ImageButton
         android:id="@+id/stuttgartMarker"
@@ -108,12 +114,13 @@
         android:background="@null"
         android:contentDescription="Stuttgart"
         android:src="@drawable/stuttgart_marker"
+        android:tooltipText="Stuttgart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintHorizontal_bias="0.38"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75" />
+        app:layout_constraintVertical_bias="0.7" />
 
     <ImageButton
         android:id="@+id/munichMarker"
@@ -122,12 +129,13 @@
         android:background="@null"
         android:contentDescription="Munich"
         android:src="@drawable/munich_marker"
+        android:tooltipText="München"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.85" />
+        app:layout_constraintVertical_bias="0.82" />
 
     <Button
         android:id="@+id/aboutButton"
