@@ -17,125 +17,245 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/hamburgMarker"
+    <FrameLayout
+        android:id="@+id/hamburgContainer"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:background="@null"
-        android:contentDescription="Hamburg"
-        android:src="@drawable/hamburg_marker"
-        android:tooltipText="Hamburg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.35"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.18" />
+        app:layout_constraintVertical_bias="0.18">
 
-    <ImageButton
-        android:id="@+id/berlinMarker"
+        <ImageButton
+            android:id="@+id/hamburgMarker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:contentDescription="Hamburg"
+            android:src="@drawable/hamburg_marker"
+            android:tooltipText="Hamburg" />
+
+        <ImageView
+            android:id="@+id/hamburgLock"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_lock"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/berlinContainer"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:background="@null"
-        android:contentDescription="Berlin"
-        android:src="@drawable/berlin_marker"
-        android:tooltipText="Berlin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.65"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintVertical_bias="0.25">
 
-    <ImageButton
-        android:id="@+id/leipzigMarker"
+        <ImageButton
+            android:id="@+id/berlinMarker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:contentDescription="Berlin"
+            android:src="@drawable/berlin_marker"
+            android:tooltipText="Berlin" />
+
+        <ImageView
+            android:id="@+id/berlinLock"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_lock"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/leipzigContainer"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:background="@null"
-        android:contentDescription="Leipzig"
-        android:src="@drawable/leipzig_marker"
-        android:tooltipText="Leipzig"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32" />
+        app:layout_constraintVertical_bias="0.32">
 
-    <ImageButton
-        android:id="@+id/dusseldorfMarker"
+        <ImageButton
+            android:id="@+id/leipzigMarker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:contentDescription="Leipzig"
+            android:src="@drawable/leipzig_marker"
+            android:tooltipText="Leipzig" />
+
+        <ImageView
+            android:id="@+id/leipzigLock"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_lock"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/dusseldorfContainer"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:background="@null"
-        android:contentDescription="Düsseldorf"
-        android:src="@drawable/dusseldorf_marker"
-        android:tooltipText="Düsseldorf"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintVertical_bias="0.45">
 
-    <ImageButton
-        android:id="@+id/cologneMarker"
+        <ImageButton
+            android:id="@+id/dusseldorfMarker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:contentDescription="Düsseldorf"
+            android:src="@drawable/dusseldorf_marker"
+            android:tooltipText="Düsseldorf" />
+
+        <ImageView
+            android:id="@+id/dusseldorfLock"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_lock"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/cologneContainer"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:background="@null"
-        android:contentDescription="Cologne"
-        android:src="@drawable/cologne_marker"
-        android:tooltipText="Köln"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.32"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintVertical_bias="0.55">
 
-    <ImageButton
-        android:id="@+id/frankfurtMarker"
+        <ImageButton
+            android:id="@+id/cologneMarker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:contentDescription="Cologne"
+            android:src="@drawable/cologne_marker"
+            android:tooltipText="Köln" />
+
+        <ImageView
+            android:id="@+id/cologneLock"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_lock"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frankfurtContainer"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:background="@null"
-        android:contentDescription="Frankfurt"
-        android:src="@drawable/frankfurt_marker"
-        android:tooltipText="Frankfurt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.42"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintVertical_bias="0.55">
 
-    <ImageButton
-        android:id="@+id/stuttgartMarker"
+        <ImageButton
+            android:id="@+id/frankfurtMarker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:contentDescription="Frankfurt"
+            android:src="@drawable/frankfurt_marker"
+            android:tooltipText="Frankfurt" />
+
+        <ImageView
+            android:id="@+id/frankfurtLock"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_lock"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/stuttgartContainer"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:background="@null"
-        android:contentDescription="Stuttgart"
-        android:src="@drawable/stuttgart_marker"
-        android:tooltipText="Stuttgart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.38"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
+        app:layout_constraintVertical_bias="0.7">
 
-    <ImageButton
-        android:id="@+id/munichMarker"
+        <ImageButton
+            android:id="@+id/stuttgartMarker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:contentDescription="Stuttgart"
+            android:src="@drawable/stuttgart_marker"
+            android:tooltipText="Stuttgart" />
+
+        <ImageView
+            android:id="@+id/stuttgartLock"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_lock"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/munichContainer"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:background="@null"
-        android:contentDescription="Munich"
-        android:src="@drawable/munich_marker"
-        android:tooltipText="München"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.82" />
+        app:layout_constraintVertical_bias="0.82">
+
+        <ImageButton
+            android:id="@+id/munichMarker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:contentDescription="Munich"
+            android:src="@drawable/munich_marker"
+            android:tooltipText="München" />
+
+        <ImageView
+            android:id="@+id/munichLock"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_lock"
+            android:visibility="gone" />
+
+    </FrameLayout>
 
     <Button
         android:id="@+id/aboutButton"

@@ -226,6 +226,7 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             .setTitle("Level Complete!")
             .setMessage("Congratulations! You completed $currentCity with a score of $score")
             .setPositiveButton("OK") { _, _ ->
+                setResult(RESULT_OK)
                 finish()
             }
             .setCancelable(false)
