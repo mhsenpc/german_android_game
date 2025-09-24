@@ -80,6 +80,7 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         binding.option3Button.setOnClickListener { checkAnswer(2) }
         binding.option4Button.setOnClickListener { checkAnswer(3) }
         binding.speakButton.setOnClickListener { speakQuestion() }
+        binding.owlButton.setOnClickListener { showHint() }
     }
 
     private fun displayNextQuestion() {
@@ -230,6 +231,21 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                 finish()
             }
             .setCancelable(false)
+            .create()
+        dialog.show()
+    }
+
+    private fun showHint() {
+        val currentQuestion = questions[currentQuestionIndex]
+        val hint = currentQuestion.optString("hint", "No hint available for this question")
+
+        val dialog = androidx.appcompat.app.AlertDialog.Builder(this)
+            .setTitle("Hint")
+            .setMessage(hint)
+            .setPositiveButton("Got it!") { dialog, _ ->
+                dialog.dismiss()
+            }
+            .setCancelable(true)
             .create()
         dialog.show()
     }

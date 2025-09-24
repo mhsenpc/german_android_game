@@ -124,6 +124,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/questionTextView" />
 
+    <ImageButton
+        android:id="@+id/owlButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@null"
+        android:src="@drawable/owl"
+        android:contentDescription="Show hint"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/questionTextView" />
+
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
