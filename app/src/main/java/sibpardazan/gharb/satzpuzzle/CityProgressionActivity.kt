@@ -24,49 +24,49 @@ class CityProgressionActivity : AppCompatActivity() {
     private fun setupCityClickListeners() {
         binding.hamburgMarker.setOnClickListener {
             if (progressionManager.isLevelUnlocked(1)) {
-                startQuizActivity("hamburg", 1)
+                startQuizActivity(getString(R.string.hamburg_key), 1)
             }
         }
 
         binding.berlinMarker.setOnClickListener {
             if (progressionManager.isLevelUnlocked(2)) {
-                startQuizActivity("berlin", 2)
+                startQuizActivity(getString(R.string.berlin_key), 2)
             }
         }
 
         binding.leipzigMarker.setOnClickListener {
             if (progressionManager.isLevelUnlocked(3)) {
-                startQuizActivity("leipzig", 3)
+                startQuizActivity(getString(R.string.leipzig_key), 3)
             }
         }
 
         binding.dusseldorfMarker.setOnClickListener {
             if (progressionManager.isLevelUnlocked(4)) {
-                startQuizActivity("dusseldorf", 4)
+                startQuizActivity(getString(R.string.dusseldorf_key), 4)
             }
         }
 
         binding.cologneMarker.setOnClickListener {
             if (progressionManager.isLevelUnlocked(5)) {
-                startQuizActivity("cologne", 5)
+                startQuizActivity(getString(R.string.cologne_key), 5)
             }
         }
 
         binding.frankfurtMarker.setOnClickListener {
             if (progressionManager.isLevelUnlocked(6)) {
-                startQuizActivity("frankfurt", 6)
+                startQuizActivity(getString(R.string.frankfurt_key), 6)
             }
         }
 
         binding.stuttgartMarker.setOnClickListener {
             if (progressionManager.isLevelUnlocked(7)) {
-                startQuizActivity("stuttgart", 7)
+                startQuizActivity(getString(R.string.stuttgart_key), 7)
             }
         }
 
         binding.munichMarker.setOnClickListener {
             if (progressionManager.isLevelUnlocked(8)) {
-                startQuizActivity("munich", 8)
+                startQuizActivity(getString(R.string.munich_key), 8)
             }
         }
 
@@ -78,8 +78,8 @@ class CityProgressionActivity : AppCompatActivity() {
 
     private fun startQuizActivity(city: String, level: Int) {
         val intent = Intent(this, QuizActivity::class.java).apply {
-            putExtra("CITY_NAME", city)
-            putExtra("LEVEL_NUMBER", level)
+            putExtra(getString(R.string.extra_city_name), city)
+            putExtra(getString(R.string.extra_level_number), level)
         }
         startActivityForResult(intent, level)
     }

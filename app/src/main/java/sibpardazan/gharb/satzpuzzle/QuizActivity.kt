@@ -28,8 +28,8 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         binding = ActivityQuizBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        currentCity = intent.getStringExtra("CITY_NAME") ?: "hamburg"
-        currentLevel = intent.getIntExtra("LEVEL_NUMBER", 1)
+        currentCity = intent.getStringExtra(getString(R.string.extra_city_name)) ?: getString(R.string.hamburg_key)
+        currentLevel = intent.getIntExtra(getString(R.string.extra_level_number), 1)
 
         tts = TextToSpeech(this, this)
 

@@ -45,4 +45,27 @@
     <!-- Activity Labels -->
     <string name="quiz_label">آزمون</string>
     <string name="about_label">درباره</string>
+
+    <!-- About Activity -->
+    <string name="about_developer_title">درباره سازنده</string>
+    <string name="app_title_persian">پازل جملات</string>
+    <string name="version">نسخه ۱.۰</string>
+    <string name="developer">سازنده</string>
+    <string name="developer_name">محسن شامحمدی</string>
+    <string name="email_title">پست الکترونیک</string>
+    <string name="about_button">درباره ما</string>
+
+    <!-- City Progression -->
+    <string name="hamburg_key">hamburg</string>
+    <string name="berlin_key">berlin</string>
+    <string name="leipzig_key">leipzig</string>
+    <string name="dusseldorf_key">dusseldorf</string>
+    <string name="cologne_key">cologne</string>
+    <string name="frankfurt_key">frankfurt</string>
+    <string name="stuttgart_key">stuttgart</string>
+    <string name="munich_key">munich</string>
+
+    <!-- Intent Extras -->
+    <string name="extra_city_name">CITY_NAME</string>
+    <string name="extra_level_number">LEVEL_NUMBER</string>
 </resources>
