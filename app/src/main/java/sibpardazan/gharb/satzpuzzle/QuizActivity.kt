@@ -111,7 +111,7 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         binding.questionTextView.text = currentQuestion.getString("sentence")
 
         val options = currentQuestion.getJSONArray("options")
-        val correctAnswer = currentQuestion.getString("answer") // todo: remove before release
+        val correctAnswer = currentQuestion.getString("answer")
 
         // Create a list of options and shuffle them
         val optionList = mutableListOf<String>()
@@ -129,7 +129,7 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         // Store the correct answer position for checking later
         currentCorrectPosition = optionList.indexOf(correctAnswer)
 
-        // Highlight correct answer with yellow background for QA testing  // todo: remove before release
+        // Reset button styles to default
         resetButtonStyles()
         // todo: remove before release
         when (currentCorrectPosition) {
