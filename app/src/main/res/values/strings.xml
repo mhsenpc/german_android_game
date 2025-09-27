@@ -74,4 +74,8 @@
     <!-- Level Picker -->
     <string name="level_picker_title">انتخاب مرحله</string>
 
+    <!-- Text-to-Speech Messages -->
+    <string name="tts_not_ready">صوت آماده نیست</string>
+    <string name="tts_error">خطا در پخش صدا</string>
+
     </resources>

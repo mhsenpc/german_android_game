@@ -15,6 +15,7 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     private lateinit var binding: ActivityQuizBinding
     private lateinit var tts: TextToSpeech
+    private var ttsInitialized = false
     private var currentCity = ""
     private var currentLevel = 0
     private var currentQuestionIndex = 0
@@ -37,6 +38,11 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         loadQuestions()
         setupClickListeners()
+
+        // Initially disable speaker button until TTS is initialized
+        binding.speakButton.isEnabled = false
+        binding.speakButton.alpha = 0.5f
+
         displayNextQuestion()
         updateUI()
     }
@@ -223,10 +229,28 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     }
 
     private fun speakQuestion() {
-        val currentQuestion = questions[currentQuestionIndex]
-        val correctAnswer = currentQuestion.getString("answer")
-        val sentence = currentQuestion.getString("sentence").replace("....", correctAnswer)
-        tts.speak(sentence, TextToSpeech.QUEUE_FLUSH, null, "")
+        if (!ttsInitialized) {
+            Toast.makeText(this, getString(R.string.tts_not_ready), Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        try {
+            val currentQuestion = questions[currentQuestionIndex]
+            val correctAnswer = currentQuestion.getString("answer")
+            val sentence = currentQuestion.getString("sentence").replace("....", correctAnswer)
+
+            // Stop any ongoing speech before starting new one
+            tts.stop()
+
+            // Speak the sentence with German language
+            val result = tts.speak(sentence, TextToSpeech.QUEUE_FLUSH, null, "sentence_utterance")
+
+            if (result == TextToSpeech.ERROR) {
+                Toast.makeText(this, getString(R.string.tts_error), Toast.LENGTH_SHORT).show()
+            }
+        } catch (e: Exception) {
+            Toast.makeText(this, "${getString(R.string.tts_error)}: ${e.message}", Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun showGameOver() {
@@ -299,7 +323,20 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             val result = tts.setLanguage(Locale.GERMAN)
             if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                 Toast.makeText(this, getString(R.string.german_language_not_supported), Toast.LENGTH_SHORT).show()
+                ttsInitialized = false
+                // Disable speaker button if German is not supported
+                binding.speakButton.isEnabled = false
+                binding.speakButton.alpha = 0.5f
+            } else {
+                ttsInitialized = true
+                binding.speakButton.isEnabled = true
+                binding.speakButton.alpha = 1.0f
             }
+        } else {
+            Toast.makeText(this, getString(R.string.tts_error), Toast.LENGTH_SHORT).show()
+            ttsInitialized = false
+            binding.speakButton.isEnabled = false
+            binding.speakButton.alpha = 0.5f
         }
     }
 
