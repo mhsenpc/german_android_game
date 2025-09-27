@@ -33,9 +33,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@null"
-            android:contentDescription="Hamburg"
+            android:contentDescription="@string/hamburg"
             android:src="@drawable/hamburg_marker"
-            android:tooltipText="Hamburg" />
+            android:tooltipText="@string/hamburg" />
 
         <ImageView
             android:id="@+id/hamburgLock"
@@ -63,9 +63,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@null"
-            android:contentDescription="Berlin"
+            android:contentDescription="@string/berlin"
             android:src="@drawable/berlin_marker"
-            android:tooltipText="Berlin" />
+            android:tooltipText="@string/berlin" />
 
         <ImageView
             android:id="@+id/berlinLock"
@@ -93,9 +93,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@null"
-            android:contentDescription="Leipzig"
+            android:contentDescription="@string/leipzig"
             android:src="@drawable/leipzig_marker"
-            android:tooltipText="Leipzig" />
+            android:tooltipText="@string/leipzig" />
 
         <ImageView
             android:id="@+id/leipzigLock"
@@ -123,9 +123,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@null"
-            android:contentDescription="Düsseldorf"
+            android:contentDescription="@string/dusseldorf"
             android:src="@drawable/dusseldorf_marker"
-            android:tooltipText="Düsseldorf" />
+            android:tooltipText="@string/dusseldorf" />
 
         <ImageView
             android:id="@+id/dusseldorfLock"
@@ -153,7 +153,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@null"
-            android:contentDescription="Cologne"
+            android:contentDescription="@string/cologne"
             android:src="@drawable/cologne_marker"
             android:tooltipText="Köln" />
 
@@ -183,9 +183,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@null"
-            android:contentDescription="Frankfurt"
+            android:contentDescription="@string/frankfurt"
             android:src="@drawable/frankfurt_marker"
-            android:tooltipText="Frankfurt" />
+            android:tooltipText="@string/frankfurt" />
 
         <ImageView
             android:id="@+id/frankfurtLock"
@@ -213,9 +213,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@null"
-            android:contentDescription="Stuttgart"
+            android:contentDescription="@string/stuttgart"
             android:src="@drawable/stuttgart_marker"
-            android:tooltipText="Stuttgart" />
+            android:tooltipText="@string/stuttgart" />
 
         <ImageView
             android:id="@+id/stuttgartLock"
@@ -243,7 +243,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@null"
-            android:contentDescription="Munich"
+            android:contentDescription="@string/munich"
             android:src="@drawable/munich_marker"
             android:tooltipText="München" />
 

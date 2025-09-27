@@ -26,12 +26,12 @@
         <activity
             android:name=".QuizActivity"
             android:exported="false"
-            android:label="Quiz"
+            android:label="@string/quiz_label"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity
             android:name=".AboutActivity"
             android:exported="false"
-            android:label="About"
+            android:label="@string/about_label"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
             </application>
 

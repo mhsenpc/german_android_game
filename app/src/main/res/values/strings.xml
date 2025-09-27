@@ -1,3 +1,48 @@
 <resources>
     <string name="app_name">SatzPuzzle</string>
+
+    <!-- Quiz Activity -->
+    <string name="error_loading_questions">خطا در بارگذاری سوالات</string>
+    <string name="score">امتیاز: %s</string>
+    <string name="level">مرحله %s - %s</string>
+    <string name="game_over">بازی تمام شد!</string>
+    <string name="game_over_message">قلب‌های شما تمام شد. امتیاز نهایی: %s</string>
+    <string name="restart_level">شروع دوباره مرحله</string>
+    <string name="main_menu">منوی اصلی</string>
+    <string name="level_complete">مرحله کامل شد!</string>
+    <string name="level_complete_message">تبریک! شما %s را با امتیاز %s به پایان رساندید</string>
+    <string name="ok">تایید</string>
+    <string name="no_hint_available">راهنمایی برای این سوال موجود نیست</string>
+    <string name="hint">راهنمایی</string>
+    <string name="got_it">متوجه شدم</string>
+    <string name="german_language_not_supported">زبان آلمانی پشتیبانی نمی‌شود</string>
+
+    <!-- Layout strings -->
+    <string name="back_to_city_progression">بازگشت به نقشه شهرها</string>
+    <string name="default_level">مرحله ۱ - هامبورگ</string>
+    <string name="default_score">امتیاز: ۰</string>
+    <string name="default_question">ich hätte gern ein .... Kaffee</string>
+    <string name="show_hint">نمایش راهنمایی</string>
+    <string name="option_1">گزینه ۱</string>
+    <string name="option_2">گزینه ۲</string>
+    <string name="option_3">گزینه ۳</string>
+    <string name="option_4">گزینه ۴</string>
+
+    <!-- City names -->
+    <string name="hamburg">هامبورگ</string>
+    <string name="berlin">برلین</string>
+    <string name="leipzig">لایپزیگ</string>
+    <string name="dusseldorf">دوسلدورف</string>
+    <string name="cologne">کلن</string>
+    <string name="frankfurt">فرانکفورت</string>
+    <string name="stuttgart">اشتوتگارت</string>
+    <string name="munich">مونیخ</string>
+
+    <!-- About Activity -->
+    <string name="back">بازگشت</string>
+    <string name="copyright">© ۲۰۲۴ SatzPuzzle. تمام حقوق محفوظ است.</string>
+
+    <!-- Activity Labels -->
+    <string name="quiz_label">آزمون</string>
+    <string name="about_label">درباره</string>
 </resources>

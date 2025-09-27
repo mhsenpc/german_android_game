@@ -34,7 +34,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/back_button_selector"
         android:src="@drawable/ic_back_arrow"
-        android:contentDescription="Back to city progression"
+        android:contentDescription="@string/back_to_city_progression"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Level 1 - Hamburg"
+        android:text="@string/default_level"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Score: 0"
+        android:text="@string/default_score"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -106,7 +106,7 @@
         android:background="@drawable/question_background"
         android:gravity="center"
         android:padding="24dp"
-        android:text="ich hätte gern ein .... Kaffee"
+        android:text="@string/default_question"
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -132,7 +132,7 @@
         android:layout_marginEnd="32dp"
         android:background="@null"
         android:src="@drawable/owl"
-        android:contentDescription="Show hint"
+        android:contentDescription="@string/show_hint"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/questionTextView" />
@@ -161,7 +161,7 @@
                 android:layout_marginBottom="16dp"
                 android:background="@color/purple_200"
                 android:padding="16dp"
-                android:text="Option 1"
+                android:text="@string/option_1"
                 android:textColor="@android:color/white"
                 android:textSize="16sp" />
 
@@ -172,7 +172,7 @@
                 android:layout_marginBottom="16dp"
                 android:background="@color/purple_200"
                 android:padding="16dp"
-                android:text="Option 2"
+                android:text="@string/option_2"
                 android:textColor="@android:color/white"
                 android:textSize="16sp" />
 
@@ -183,7 +183,7 @@
                 android:layout_marginBottom="16dp"
                 android:background="@color/purple_200"
                 android:padding="16dp"
-                android:text="Option 3"
+                android:text="@string/option_3"
                 android:textColor="@android:color/white"
                 android:textSize="16sp" />
 
@@ -193,7 +193,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/purple_200"
                 android:padding="16dp"
-                android:text="Option 4"
+                android:text="@string/option_4"
                 android:textColor="@android:color/white"
                 android:textSize="16sp" />
 

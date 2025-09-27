@@ -53,7 +53,7 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
             loadBackgroundImage(jsonObject.getString("background"))
         } catch (e: Exception) {
-            Toast.makeText(this, "Error loading questions", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.error_loading_questions), Toast.LENGTH_SHORT).show()
             finish()
         }
     }
@@ -185,7 +185,7 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     }
 
     private fun updateScore() {
-        binding.scoreTextView.text = "Score: $score"
+        binding.scoreTextView.text = getString(R.string.score, score)
     }
 
     private fun updateHearts() {
@@ -197,7 +197,7 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private fun updateUI() {
         updateScore()
         updateHearts()
-        binding.levelTextView.text = "Level $currentLevel - ${currentCity.replaceFirstChar { it.uppercase() }}"
+        binding.levelTextView.text = getString(R.string.level, currentLevel, currentCity.replaceFirstChar { it.uppercase() })
     }
 
     private fun speakQuestion() {
@@ -209,12 +209,12 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     private fun showGameOver() {
         val dialog = androidx.appcompat.app.AlertDialog.Builder(this)
-            .setTitle("Game Over!")
-            .setMessage("You've run out of hearts. Final score: $score")
-            .setPositiveButton("Restart Level") { _, _ ->
+            .setTitle(getString(R.string.game_over))
+            .setMessage(getString(R.string.game_over_message, score))
+            .setPositiveButton(getString(R.string.restart_level)) { _, _ ->
                 restartLevel()
             }
-            .setNegativeButton("Main Menu") { _, _ ->
+            .setNegativeButton(getString(R.string.main_menu)) { _, _ ->
                 finish()
             }
             .setCancelable(false)
@@ -224,9 +224,9 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     private fun showLevelComplete() {
         val dialog = androidx.appcompat.app.AlertDialog.Builder(this)
-            .setTitle("Level Complete!")
-            .setMessage("Congratulations! You completed $currentCity with a score of $score")
-            .setPositiveButton("OK") { _, _ ->
+            .setTitle(getString(R.string.level_complete))
+            .setMessage(getString(R.string.level_complete_message, currentCity.replaceFirstChar { it.uppercase() }, score))
+            .setPositiveButton(getString(R.string.ok)) { _, _ ->
                 setResult(RESULT_OK)
                 finish()
             }
@@ -237,12 +237,12 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     private fun showHint() {
         val currentQuestion = questions[currentQuestionIndex]
-        val hint = currentQuestion.optString("hint", "No hint available for this question")
+        val hint = currentQuestion.optString("hint", getString(R.string.no_hint_available))
 
         val dialog = androidx.appcompat.app.AlertDialog.Builder(this)
-            .setTitle("Hint")
+            .setTitle(getString(R.string.hint))
             .setMessage(hint)
-            .setPositiveButton("Got it!") { dialog, _ ->
+            .setPositiveButton(getString(R.string.got_it)) { dialog, _ ->
                 dialog.dismiss()
             }
             .setCancelable(true)
@@ -262,7 +262,7 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         if (status == TextToSpeech.SUCCESS) {
             val result = tts.setLanguage(Locale.GERMAN)
             if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
-                Toast.makeText(this, "German language not supported", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.german_language_not_supported), Toast.LENGTH_SHORT).show()
             }
         }
     }

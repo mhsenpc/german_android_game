@@ -15,7 +15,7 @@
         android:layout_marginTop="16dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:src="@drawable/ic_back_arrow"
-        android:contentDescription="Back"
+        android:contentDescription="@string/back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -123,7 +123,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="© 2024 SatzPuzzle. All rights reserved."
+        android:text="@string/copyright"
         android:textColor="@color/germany_gold"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
