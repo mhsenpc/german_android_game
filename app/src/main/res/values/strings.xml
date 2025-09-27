@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SatzPuzzle</string>
+    <string name="app_name">پازل جملات</string>
 
     <!-- Quiz Activity -->
     <string name="error_loading_questions">خطا در بارگذاری سوالات</string>
