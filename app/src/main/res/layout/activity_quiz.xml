@@ -34,7 +34,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/back_button_selector"
         android:src="@drawable/ic_back_arrow"
-        android:contentDescription="@string/back_to_city_progression"
+        android:contentDescription="@string/back_to_level_picker"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

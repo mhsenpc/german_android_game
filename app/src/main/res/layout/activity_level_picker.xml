@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#77AD68"
+    tools:context=".LevelPickerActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="@string/level_picker_title"
+                android:textColor="@android:color/black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <!-- Level Grid Row 1 (Right to Left) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- Level 3 - Leipzig -->
+                <FrameLayout
+                    android:id="@+id/level3Container"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/level3Icon"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/leipzig_marker" />
+
+                    <ImageView
+                        android:id="@+id/level3Lock"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_lock"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/level3Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/leipzig"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+
+                <!-- Level 2 - Berlin -->
+                <FrameLayout
+                    android:id="@+id/level2Container"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/level2Icon"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/berlin_marker" />
+
+                    <ImageView
+                        android:id="@+id/level2Lock"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_lock"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/level2Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/berlin"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+
+                <!-- Level 1 - Hamburg -->
+                <FrameLayout
+                    android:id="@+id/level1Container"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/level1Icon"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/hamburg_marker" />
+
+                    <ImageView
+                        android:id="@+id/level1Lock"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_lock"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/level1Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/hamburg"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <!-- Level Grid Row 2 (Right to Left) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- Level 6 - Frankfurt -->
+                <FrameLayout
+                    android:id="@+id/level6Container"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/level6Icon"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/frankfurt_marker" />
+
+                    <ImageView
+                        android:id="@+id/level6Lock"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_lock"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/level6Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/frankfurt"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+
+                <!-- Level 5 - Cologne -->
+                <FrameLayout
+                    android:id="@+id/level5Container"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/level5Icon"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/cologne_marker" />
+
+                    <ImageView
+                        android:id="@+id/level5Lock"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_lock"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/level5Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/cologne"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+
+                <!-- Level 4 - Düsseldorf -->
+                <FrameLayout
+                    android:id="@+id/level4Container"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/level4Icon"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/dusseldorf_marker" />
+
+                    <ImageView
+                        android:id="@+id/level4Lock"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_lock"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/level4Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/dusseldorf"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <!-- Level Grid Row 3 (Right to Left) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- Level 8 - Munich -->
+                <FrameLayout
+                    android:id="@+id/level8Container"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/level8Icon"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/munich_marker" />
+
+                    <ImageView
+                        android:id="@+id/level8Lock"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_lock"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/level8Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/munich"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+
+                <!-- Level 7 - Stuttgart -->
+                <FrameLayout
+                    android:id="@+id/level7Container"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/level7Icon"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/stuttgart_marker" />
+
+                    <ImageView
+                        android:id="@+id/level7Lock"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_lock"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/level7Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/stuttgart"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+
+                <!-- Empty space for alignment -->
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="8dp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <!-- Score Display -->
+            <TextView
+                android:id="@+id/scoreTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- About Button -->
+            <Button
+                android:id="@+id/aboutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_button"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

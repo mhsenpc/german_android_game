@@ -18,7 +18,7 @@
     <string name="german_language_not_supported">زبان آلمانی پشتیبانی نمی‌شود</string>
 
     <!-- Layout strings -->
-    <string name="back_to_city_progression">بازگشت به نقشه شهرها</string>
+    <string name="back_to_level_picker">بازگشت به انتخاب مرحله</string>
     <string name="default_level">مرحله ۱ - هامبورگ</string>
     <string name="default_score">امتیاز: ۰</string>
     <string name="default_question">ich hätte gern ein .... Kaffee</string>
@@ -70,5 +70,8 @@
     <string name="extra_level_number">LEVEL_NUMBER</string>
     <string name="extra_global_score">GLOBAL_SCORE</string>
     <string name="extra_final_score">FINAL_SCORE</string>
+
+    <!-- Level Picker -->
+    <string name="level_picker_title">انتخاب مرحله</string>
 
     </resources>
