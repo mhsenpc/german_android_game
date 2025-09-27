@@ -20,6 +20,7 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private var currentQuestionIndex = 0
     private var score = 0
     private var hearts = 3
+    private var currentCorrectPosition = 0
     private lateinit var questions: List<JSONObject>
     private var usedQuestions = mutableSetOf<Int>()
 
@@ -103,12 +104,34 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         binding.questionTextView.text = currentQuestion.getString("sentence")
 
         val options = currentQuestion.getJSONArray("options")
-        binding.option1Button.text = options.getString(0)
-        binding.option2Button.text = options.getString(1)
-        binding.option3Button.text = options.getString(2)
-        binding.option4Button.text = options.getString(3)
+        val correctAnswer = currentQuestion.getString("answer") // todo: remove before release
 
+        // Create a list of options and shuffle them
+        val optionList = mutableListOf<String>()
+        for (i in 0 until options.length()) {
+            optionList.add(options.getString(i))
+        }
+        optionList.shuffle()
+
+        // Set the shuffled options to buttons
+        binding.option1Button.text = optionList[0]
+        binding.option2Button.text = optionList[1]
+        binding.option3Button.text = optionList[2]
+        binding.option4Button.text = optionList[3]
+
+        // Store the correct answer position for checking later
+        currentCorrectPosition = optionList.indexOf(correctAnswer)
+
+        // Highlight correct answer with yellow background for QA testing  // todo: remove before release
         resetButtonStyles()
+        // todo: remove before release
+        when (currentCorrectPosition) {
+            0 -> binding.option1Button.setBackgroundColor(ContextCompat.getColor(this, android.R.color.holo_orange_light))
+            1 -> binding.option2Button.setBackgroundColor(ContextCompat.getColor(this, android.R.color.holo_orange_light))
+            2 -> binding.option3Button.setBackgroundColor(ContextCompat.getColor(this, android.R.color.holo_orange_light))
+            3 -> binding.option4Button.setBackgroundColor(ContextCompat.getColor(this, android.R.color.holo_orange_light))
+        }
+
         enableAnswerButtons(true)
     }
 
@@ -117,10 +140,8 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         val currentQuestion = questions[currentQuestionIndex]
         val correctAnswer = currentQuestion.getString("answer")
-        val options = currentQuestion.getJSONArray("options")
-        val selectedAnswer = options.getString(selectedOption)
 
-        if (selectedAnswer == correctAnswer) {
+        if (selectedOption == currentCorrectPosition) {
             score += 10
             updateScore()
             showCorrectAnswer(selectedOption)
