@@ -19,6 +19,7 @@ class CityProgressionActivity : AppCompatActivity() {
         progressionManager = ProgressionManager(this)
         setupCityClickListeners()
         updateCityStates()
+        updateScoreDisplay()
     }
 
     private fun setupCityClickListeners() {
@@ -80,6 +81,7 @@ class CityProgressionActivity : AppCompatActivity() {
         val intent = Intent(this, QuizActivity::class.java).apply {
             putExtra(getString(R.string.extra_city_name), city)
             putExtra(getString(R.string.extra_level_number), level)
+            putExtra(getString(R.string.extra_global_score), progressionManager.getGlobalScore())
         }
         startActivityForResult(intent, level)
     }
@@ -124,10 +126,22 @@ class CityProgressionActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
 
         if (resultCode == RESULT_OK) {
-            // Level completed successfully, unlock next level
+            // Level completed successfully, unlock next level and update score
             val completedLevel = requestCode
             progressionManager.unlockLevel(completedLevel + 1)
+            val finalScore = data?.getIntExtra(getString(R.string.extra_final_score), progressionManager.getGlobalScore()) ?: progressionManager.getGlobalScore()
+            progressionManager.updateGlobalScore(finalScore)
             updateCityStates()
+            updateScoreDisplay()
+        } else if (resultCode == RESULT_CANCELED) {
+            // Level was restarted or failed, update score if available
+            val finalScore = data?.getIntExtra(getString(R.string.extra_final_score), progressionManager.getGlobalScore()) ?: progressionManager.getGlobalScore()
+            progressionManager.updateGlobalScore(finalScore)
+            updateScoreDisplay()
         }
+    }
+
+    private fun updateScoreDisplay() {
+        binding.scoreTextView.text = getString(R.string.score, progressionManager.getGlobalScore())
     }
 }

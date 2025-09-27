@@ -31,6 +31,7 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         currentCity = intent.getStringExtra(getString(R.string.extra_city_name)) ?: getString(R.string.hamburg_key)
         currentLevel = intent.getIntExtra(getString(R.string.extra_level_number), 1)
+        score = intent.getIntExtra(getString(R.string.extra_global_score), 0)
 
         tts = TextToSpeech(this, this)
 
@@ -74,7 +75,7 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     private fun setupClickListeners() {
         binding.backButton.setOnClickListener {
-            finish()
+            saveScoreAndExit()
         }
         binding.option1Button.setOnClickListener { checkAnswer(0) }
         binding.option2Button.setOnClickListener { checkAnswer(1) }
@@ -236,6 +237,10 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                 restartLevel()
             }
             .setNegativeButton(getString(R.string.main_menu)) { _, _ ->
+                val resultIntent = Intent().apply {
+                    putExtra(getString(R.string.extra_final_score), score)
+                }
+                setResult(RESULT_CANCELED, resultIntent)
                 finish()
             }
             .setCancelable(false)
@@ -248,7 +253,10 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             .setTitle(getString(R.string.level_complete))
             .setMessage(getString(R.string.level_complete_message, currentCity.replaceFirstChar { it.uppercase() }, score))
             .setPositiveButton(getString(R.string.ok)) { _, _ ->
-                setResult(RESULT_OK)
+                val resultIntent = Intent().apply {
+                    putExtra(getString(R.string.extra_final_score), score)
+                }
+                setResult(RESULT_OK, resultIntent)
                 finish()
             }
             .setCancelable(false)
@@ -272,11 +280,18 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     }
 
     private fun restartLevel() {
-        score = 0
         hearts = 3
         usedQuestions.clear()
         updateUI()
         displayNextQuestion()
+    }
+
+    private fun saveScoreAndExit() {
+        val resultIntent = Intent().apply {
+            putExtra(getString(R.string.extra_final_score), score)
+        }
+        setResult(RESULT_CANCELED, resultIntent)
+        finish()
     }
 
     override fun onInit(status: Int) {
@@ -286,6 +301,10 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                 Toast.makeText(this, getString(R.string.german_language_not_supported), Toast.LENGTH_SHORT).show()
             }
         }
+    }
+
+    override fun onBackPressed() {
+        saveScoreAndExit()
     }
 
     override fun onDestroy() {

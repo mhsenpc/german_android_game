@@ -68,4 +68,7 @@
     <!-- Intent Extras -->
     <string name="extra_city_name">CITY_NAME</string>
     <string name="extra_level_number">LEVEL_NUMBER</string>
-</resources>
+    <string name="extra_global_score">GLOBAL_SCORE</string>
+    <string name="extra_final_score">FINAL_SCORE</string>
+
+    </resources>
