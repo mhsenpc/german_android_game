@@ -143,7 +143,7 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         val correctAnswer = currentQuestion.getString("answer")
 
         if (selectedOption == currentCorrectPosition) {
-            score += 10
+            score += 7
             updateScore()
             showCorrectAnswer(selectedOption)
             binding.questionTextView.text = currentQuestion.getString("sentence").replace("....", correctAnswer)
