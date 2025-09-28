@@ -131,14 +131,7 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         // Reset button styles to default
         resetButtonStyles()
-        // todo: remove before release
-        when (currentCorrectPosition) {
-            0 -> binding.option1Button.setBackgroundColor(ContextCompat.getColor(this, android.R.color.holo_orange_light))
-            1 -> binding.option2Button.setBackgroundColor(ContextCompat.getColor(this, android.R.color.holo_orange_light))
-            2 -> binding.option3Button.setBackgroundColor(ContextCompat.getColor(this, android.R.color.holo_orange_light))
-            3 -> binding.option4Button.setBackgroundColor(ContextCompat.getColor(this, android.R.color.holo_orange_light))
-        }
-
+        
         enableAnswerButtons(true)
     }
 
