@@ -33,6 +33,11 @@
             android:exported="false"
             android:label="@string/about_label"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".ReferencesActivity"
+            android:exported="false"
+            android:label="@string/references_label"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
             </application>
 
 </manifest>

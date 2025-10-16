@@ -192,6 +192,11 @@ class LevelPickerActivity : AppCompatActivity() {
                 startActivity(intent)
                 true
             }
+            R.id.action_references -> {
+                val intent = Intent(this, ReferencesActivity::class.java)
+                startActivity(intent)
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }

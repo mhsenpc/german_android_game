@@ -56,6 +56,16 @@
     <string name="about_button">درباره ما</string>
     <string name="about_us_menu">درباره ما</string>
 
+    <!-- References Activity -->
+    <string name="references_menu">منابع</string>
+    <string name="references_title">منابع و مراجع</string>
+    <string name="references_description">منابع و وب‌سایت‌هایی که در توسعه این اپلیکیشن استفاده شده‌اند:</string>
+    <string name="references_label">منابع</string>
+    <string name="website_1_name">Canva</string>
+    <string name="website_1_url">https://www.canva.com</string>
+    <string name="website_2_name">Example Website</string>
+    <string name="website_2_url">https://example.com</string>
+
     <!-- City Progression -->
     <string name="hamburg_key">hamburg</string>
     <string name="berlin_key">berlin</string>

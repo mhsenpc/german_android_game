@@ -8,4 +8,10 @@
         android:icon="@drawable/ic_about"
         app:showAsAction="never" />
 
+    <item
+        android:id="@+id/action_references"
+        android:title="@string/references_menu"
+        android:icon="@drawable/ic_references"
+        app:showAsAction="never" />
+
 </menu>
