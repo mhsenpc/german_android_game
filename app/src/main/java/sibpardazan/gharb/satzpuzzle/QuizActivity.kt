@@ -317,21 +317,21 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         if (status == TextToSpeech.SUCCESS) {
             val result = tts.setLanguage(Locale.GERMAN)
             if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
-                Toast.makeText(this, getString(R.string.german_language_not_supported), Toast.LENGTH_SHORT).show()
                 ttsInitialized = false
                 // Disable speaker button if German is not supported
                 binding.speakButton.isEnabled = false
-                binding.speakButton.alpha = 0.5f
+                binding.speakButton.alpha = 0f
+                binding.speakButton.visibility = android.view.View.INVISIBLE
             } else {
                 ttsInitialized = true
                 binding.speakButton.isEnabled = true
                 binding.speakButton.alpha = 1.0f
             }
         } else {
-            Toast.makeText(this, getString(R.string.tts_error), Toast.LENGTH_SHORT).show()
             ttsInitialized = false
             binding.speakButton.isEnabled = false
-            binding.speakButton.alpha = 0.5f
+            binding.speakButton.alpha = 0f
+            binding.speakButton.visibility = android.view.View.INVISIBLE
         }
     }
 
