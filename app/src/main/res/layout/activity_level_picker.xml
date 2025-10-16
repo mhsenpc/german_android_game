@@ -391,14 +391,6 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <!-- About Button -->
-            <Button
-                android:id="@+id/aboutButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/about_button"
-                android:textSize="16sp" />
-
         </LinearLayout>
 
     </ScrollView>

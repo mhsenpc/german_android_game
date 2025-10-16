@@ -54,6 +54,7 @@
     <string name="developer_name">محسن شامحمدی</string>
     <string name="email_title">پست الکترونیک</string>
     <string name="about_button">درباره ما</string>
+    <string name="about_us_menu">درباره ما</string>
 
     <!-- City Progression -->
     <string name="hamburg_key">hamburg</string>

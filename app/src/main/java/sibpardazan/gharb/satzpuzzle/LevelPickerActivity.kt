@@ -2,6 +2,8 @@ package sibpardazan.gharb.satzpuzzle
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import sibpardazan.gharb.satzpuzzle.databinding.ActivityLevelPickerBinding
@@ -91,11 +93,7 @@ class LevelPickerActivity : AppCompatActivity() {
             }
         }
 
-        binding.aboutButton.setOnClickListener {
-            val intent = Intent(this, AboutActivity::class.java)
-            startActivity(intent)
-        }
-    }
+      }
 
     private fun startQuizActivity(city: String, level: Int) {
         val intent = Intent(this, QuizActivity::class.java).apply {
@@ -184,5 +182,21 @@ class LevelPickerActivity : AppCompatActivity() {
 
     private fun updateScoreDisplay() {
         binding.scoreTextView.text = getString(R.string.score, progressionManager.getGlobalScore())
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_about -> {
+                val intent = Intent(this, AboutActivity::class.java)
+                startActivity(intent)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 }
