@@ -20,6 +20,7 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private var currentLevel = 0
     private var currentQuestionIndex = 0
     private var score = 0
+    private var initialScore = 0
     private var hearts = 3
     private var currentCorrectPosition = 0
     private lateinit var questions: List<JSONObject>
@@ -33,6 +34,7 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         currentCity = intent.getStringExtra(getString(R.string.extra_city_name)) ?: getString(R.string.hamburg_key)
         currentLevel = intent.getIntExtra(getString(R.string.extra_level_number), 1)
         score = intent.getIntExtra(getString(R.string.extra_global_score), 0)
+        initialScore = score
 
         tts = TextToSpeech(this, this)
 
@@ -305,7 +307,7 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     private fun saveScoreAndExit() {
         val resultIntent = Intent().apply {
-            putExtra(getString(R.string.extra_final_score), score)
+            putExtra(getString(R.string.extra_final_score), initialScore)
         }
         setResult(RESULT_CANCELED, resultIntent)
         finish()

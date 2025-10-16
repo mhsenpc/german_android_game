@@ -3,14 +3,14 @@
 
     <!-- Quiz Activity -->
     <string name="error_loading_questions">خطا در بارگذاری سوالات</string>
-    <string name="score">امتیاز: %s</string>
-    <string name="level">مرحله %s - %s</string>
+    <string name="score">امتیاز: %d</string>
+    <string name="level">مرحله %d - %s</string>
     <string name="game_over">بازی تمام شد!</string>
-    <string name="game_over_message">قلب‌های شما تمام شد. امتیاز نهایی: %s</string>
+    <string name="game_over_message">قلب‌های شما تمام شد. امتیاز نهایی: %d</string>
     <string name="restart_level">شروع دوباره مرحله</string>
     <string name="main_menu">منوی اصلی</string>
     <string name="level_complete">مرحله کامل شد!</string>
-    <string name="level_complete_message">تبریک! شما %s را با امتیاز %s به پایان رساندید</string>
+    <string name="level_complete_message">تبریک! شما %s را با امتیاز %d به پایان رساندید</string>
     <string name="ok">تایید</string>
     <string name="no_hint_available">راهنمایی برای این سوال موجود نیست</string>
     <string name="hint">راهنمایی</string>

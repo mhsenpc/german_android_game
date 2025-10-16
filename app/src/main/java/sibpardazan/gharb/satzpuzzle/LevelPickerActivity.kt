@@ -172,12 +172,8 @@ class LevelPickerActivity : AppCompatActivity() {
             progressionManager.updateGlobalScore(finalScore)
             updateLevelStates()
             updateScoreDisplay()
-        } else if (resultCode == RESULT_CANCELED) {
-            // Level was restarted or failed, update score if available
-            val finalScore = data?.getIntExtra(getString(R.string.extra_final_score), progressionManager.getGlobalScore()) ?: progressionManager.getGlobalScore()
-            progressionManager.updateGlobalScore(finalScore)
-            updateScoreDisplay()
         }
+        // Note: RESULT_CANCELED is ignored - no score saving for early exits
     }
 
     private fun updateScoreDisplay() {
