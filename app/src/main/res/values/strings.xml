@@ -49,10 +49,12 @@
     <!-- About Activity -->
     <string name="about_developer_title">درباره سازنده</string>
     <string name="app_title_persian">پازل جملات</string>
-    <string name="version">نسخه ۱.۰</string>
+    <string name="version">نسخه ۱.۲</string>
     <string name="developer">سازنده</string>
     <string name="developer_name">محسن شامحمدی</string>
     <string name="email_title">پست الکترونیک</string>
+    <string name="special_thanks_title">سپاس ویژه</string>
+    <string name="special_thanks_name">مهدی حسینی</string>
     <string name="about_button">درباره ما</string>
     <string name="about_us_menu">درباره ما</string>
 

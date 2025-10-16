@@ -119,6 +119,31 @@
         app:layout_constraintTop_toBottomOf="@id/emailTitleTextView" />
 
     <TextView
+        android:id="@+id/specialThanksTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/special_thanks_title"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailTextView" />
+
+    <TextView
+        android:id="@+id/specialThanksNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/special_thanks_name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/specialThanksTitleTextView" />
+
+    <TextView
         android:id="@+id/copyrightTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
