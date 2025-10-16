@@ -61,10 +61,17 @@
     <string name="references_title">منابع و مراجع</string>
     <string name="references_description">منابع و وب‌سایت‌هایی که در توسعه این اپلیکیشن استفاده شده‌اند:</string>
     <string name="references_label">منابع</string>
-    <string name="website_1_name">Canva</string>
-    <string name="website_1_url">https://www.canva.com</string>
-    <string name="website_2_name">Example Website</string>
-    <string name="website_2_url">https://example.com</string>
+
+    <string-array name="reference_urls">
+        <item>https://languesvivantes.com/en/program/german-in-berlin-did/</item>
+        <item>https://pixers.uk/stickers/cologne-germany-57686364</item>
+        <item>https://tourism.restexpert.com/germany/nordrhein-westfalen/towns/</item>
+        <item>https://simple.wikipedia.org/wiki/Frankfurt</item>
+        <item>https://www.reddit.com/r/howislivingthere/comments/1k83sk4/how_is_quality_of_life_in_hamburg/</item>
+        <item>https://www.leipzig.de/newsarchiv/news/leipzig%20maintains%202nd%20place%20in%20city%20rankings%20for%20future%20outlook</item>
+        <item>https://www.msn.com/en-sg/news/other/revealed-expats-in-europe-are-among-the-unhappiest-in-the-world/ar-AA1MzDG0</item>
+        <item>https://uniquegermany.de/portfolio-item/private-walking-tour-of-stuttgart/</item>
+    </string-array>
 
     <!-- City Progression -->
     <string name="hamburg_key">hamburg</string>
