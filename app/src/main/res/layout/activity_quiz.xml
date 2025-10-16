@@ -162,7 +162,9 @@
                 android:padding="16dp"
                 android:text="@string/option_1"
                 android:textColor="@android:color/white"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_blue_selector" />
 
             <Button
                 android:id="@+id/option2Button"
@@ -172,7 +174,9 @@
                 android:padding="16dp"
                 android:text="@string/option_2"
                 android:textColor="@android:color/white"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_blue_selector" />
 
             <Button
                 android:id="@+id/option3Button"
@@ -182,7 +186,9 @@
                 android:padding="16dp"
                 android:text="@string/option_3"
                 android:textColor="@android:color/white"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_blue_selector" />
 
             <Button
                 android:id="@+id/option4Button"
@@ -191,7 +197,9 @@
                 android:padding="16dp"
                 android:text="@string/option_4"
                 android:textColor="@android:color/white"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_blue_selector" />
 
         </LinearLayout>
 

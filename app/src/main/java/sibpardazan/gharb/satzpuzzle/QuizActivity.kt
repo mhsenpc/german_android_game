@@ -193,11 +193,11 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     }
 
     private fun resetButtonStyles() {
-        val defaultColor = ContextCompat.getColor(this, android.R.color.darker_gray)
-        binding.option1Button.setBackgroundColor(defaultColor)
-        binding.option2Button.setBackgroundColor(defaultColor)
-        binding.option3Button.setBackgroundColor(defaultColor)
-        binding.option4Button.setBackgroundColor(defaultColor)
+        // Reset to the blue button selector
+        binding.option1Button.setBackgroundResource(R.drawable.button_blue_selector)
+        binding.option2Button.setBackgroundResource(R.drawable.button_blue_selector)
+        binding.option3Button.setBackgroundResource(R.drawable.button_blue_selector)
+        binding.option4Button.setBackgroundResource(R.drawable.button_blue_selector)
     }
 
     private fun enableAnswerButtons(enabled: Boolean) {

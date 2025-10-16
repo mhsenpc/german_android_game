@@ -7,4 +7,9 @@
     <color name="germany_black">#FF000000</color>
     <color name="germany_red">#FFDD0000</color>
     <color name="germany_gold">#FFFFCE00</color>
+
+    <!-- Button Colors -->
+    <color name="button_blue">#FF2196F3</color>
+    <color name="button_blue_dark">#FF1976D2</color>
+    <color name="button_blue_pressed">#FF0D47A1</color>
 </resources>
