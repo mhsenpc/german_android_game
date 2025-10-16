@@ -12,4 +12,7 @@
     <color name="button_blue">#FF2196F3</color>
     <color name="button_blue_dark">#FF1976D2</color>
     <color name="button_blue_pressed">#FF0D47A1</color>
+
+    <!-- Hint Popover Colors -->
+    <color name="hint_popover_overlay">#00000000</color>
 </resources>

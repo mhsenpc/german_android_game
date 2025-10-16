@@ -287,15 +287,8 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         val currentQuestion = questions[currentQuestionIndex]
         val hint = currentQuestion.optString("hint", getString(R.string.no_hint_available))
 
-        val dialog = androidx.appcompat.app.AlertDialog.Builder(this)
-            .setTitle(getString(R.string.hint))
-            .setMessage(hint)
-            .setPositiveButton(getString(R.string.got_it)) { dialog, _ ->
-                dialog.dismiss()
-            }
-            .setCancelable(true)
-            .create()
-        dialog.show()
+        // Show the beautiful hint popover
+        HintPopoverDialog.show(this, hint)
     }
 
     private fun restartLevel() {
