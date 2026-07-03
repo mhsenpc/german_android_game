@@ -15,4 +15,21 @@
 
     <!-- Hint Popover Colors -->
     <color name="hint_popover_overlay">#00000000</color>
+
+    <!-- Home Screen – Modern Palette -->
+    <color name="home_bg_top">#FFEEF3FB</color>
+    <color name="home_bg_bottom">#FFD9E2F2</color>
+    <color name="home_card_surface">#FFFFFFFF</color>
+    <color name="home_card_surface_locked">#FFE7ECF3</color>
+    <color name="home_card_border">#FFE2E8F1</color>
+    <color name="home_text_primary">#FF16203A</color>
+    <color name="home_text_secondary">#FF5A6884</color>
+    <color name="home_title">#FF1A237E</color>
+    <color name="home_accent_blue">#FF2563EB</color>
+    <color name="home_accent_blue_soft">#FFDCE7FB</color>
+    <color name="home_badge_text">#FFFFFFFF</color>
+    <color name="home_score_chip_bg">#CCFFFFFF</color>
+    <color name="home_score_chip_border">#FFE2E8F1</color>
+    <color name="home_score_text">#FFB45309</color>
+    <color name="home_star">#FFF59E0B</color>
 </resources>

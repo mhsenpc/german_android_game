@@ -94,6 +94,7 @@
 
     <!-- Level Picker -->
     <string name="level_picker_title">انتخاب مرحله</string>
+    <string name="level_picker_subtitle">یک شهر را برای شروع انتخاب کن</string>
 
     <!-- Text-to-Speech Messages -->
     <string name="tts_not_ready">صوت آماده نیست</string>
