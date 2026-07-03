@@ -37,7 +37,7 @@
       "sentence": "wir dürfen hier nicht ....",
       "options": ["rauchen", "das Haus", "am Montag", "schön"],
       "answer": "rauchen",
-      "hint": "دربان nicht (نه) فعل اصلی لازم است، rauchen (سیگار کشیدن) منطقی است"
+      "hint": "بعد از فعل کمکی و nicht (نه) فعل اصلی لازم است، rauchen (سیگار کشیدن) منطقی است"
     },
     {
       "sentence": "ich kann sehr gut ....",
@@ -49,7 +49,7 @@
       "sentence": "du musst .... zum Arzt gehen",
       "options": ["heute", "das Auto", "sprechen", "kaufen"],
       "answer": "heute",
-      "hint": "جمله به قید زمان نیاز دارد، heute (امروز) مناسب است"
+      "hint": "جمله‌های با فعل کمکی اغلب به قید زمان نیاز دارند، heute (امروز) مناسب است"
     },
     {
       "sentence": "wir möchten am Wochenende .... fahren",

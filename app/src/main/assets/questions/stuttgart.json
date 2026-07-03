@@ -43,7 +43,7 @@
       "sentence": "das .... Buch ist interessant",
       "options": ["große", "großes", "großer", "großen"],
       "answer": "große",
-      "hint": "کتاب خنثی است و با das می‌آید، پس صفت پایانه -e می‌گیرد"
+      "hint": "کتاب خنثی است و با das می‌آید (حالت فاعلی)، پس صفت پایانه -e می‌گیرد"
     },
     {
       "sentence": "sie trägt eine .... Jacke",

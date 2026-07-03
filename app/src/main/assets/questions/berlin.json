@@ -19,7 +19,7 @@
       "sentence": "er .... jeden Tag Kaffee",
       "options": ["trinkt", "trinke", "trinkst", "trinken"],
       "answer": "trinkt",
-      "hint": "با ضمیر er (او مذکر) فعل پایانه -t می‌گیرد"
+      "hint": "با ضمایر er/sie/es (او) و ihr (شما جمع) فعل پایانه -t می‌گیرد"
     },
     {
       "sentence": "wir .... am Wochenende ins Kino",
@@ -31,7 +31,7 @@
       "sentence": "ihr .... Pizza zum Abendessen",
       "options": ["esst", "esse", "isst", "essen"],
       "answer": "esst",
-      "hint": "با ضمیر ihr (شما جمع) فعل پایانه -t می‌گیرد"
+      "hint": "با ضمیر ihr (شما جمع) فعل پایانه -t می‌گیرد، اما برای essen به esst تبدیل می‌شود"
     },
     {
       "sentence": "sie .... ein interessantes Buch",
@@ -55,7 +55,7 @@
       "sentence": "sie .... heute nicht zur Arbeit",
       "options": ["kommt", "komme", "kommst", "kommen"],
       "answer": "kommt",
-      "hint": "با ضمیر sie (او مؤنث) فعل پایانه -t می‌گیرد"
+      "hint": "با ضمایر er/sie/es (او) فعل پایانه -t می‌گیرد، sie اینجا مؤنث است"
     },
     {
       "sentence": "wir .... gerne Musik",
@@ -67,7 +67,7 @@
       "sentence": "ihr .... zu spät zur Schule",
       "options": ["kommt", "komme", "kommst", "kommen"],
       "answer": "kommt",
-      "hint": "با ضمیر ihr (شما جمع) فعل پایانه -t می‌گیرد"
+      "hint": "با ضمیر ihr (شما جمع) فعل پایانه -t می‌گیرد، مثل er/sie/es"
     },
     {
       "sentence": "ich .... meine Familie am Sonntag",
@@ -85,7 +85,7 @@
       "sentence": "er .... den ganzen Tag",
       "options": ["arbeitet", "arbeite", "arbeitest", "arbeiten"],
       "answer": "arbeitet",
-      "hint": "با ضمیر er (او مذکر) فعل پایانه -t می‌گیرد"
+      "hint": "با ضمایر er/sie/es فعل پایانه -t می‌گیرد، افعال پایانه -ten یا -den حرف e اضافه می‌شود"
     },
     {
       "sentence": "sie .... ihre Freunde oft",

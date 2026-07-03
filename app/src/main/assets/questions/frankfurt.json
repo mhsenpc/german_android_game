@@ -73,7 +73,7 @@
       "sentence": "ich laufe .... den Park",
       "options": ["durch", "über", "unter", "zwischen"],
       "answer": "durch",
-      "hint": "عبور کردن از پارک با حرف اضافه durch (از میان) استفاده می‌کند"
+      "hint": "عبور کردن از میان پارک با حرف اضافه durch (از میان) + حالت چهارم استفاده می‌کند"
     },
     {
       "sentence": "der Brief kommt .... England",

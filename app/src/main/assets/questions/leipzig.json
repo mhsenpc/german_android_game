@@ -67,7 +67,7 @@
       "sentence": "ich kenne .... nicht",
       "options": ["sie", "ihr", "ihnen", "ihre"],
       "answer": "sie",
-      "hint": "فعل kennen حالت مفعولی می‌خواهد، sie = آن‌ها را (یا او را مؤنث)"
+      "hint": "فعل kennen حالت مفعولی می‌خواهد، sie = او را (مؤنث) یا آن‌ها را"
     },
     {
       "sentence": "wo ist .... Schlüssel?",

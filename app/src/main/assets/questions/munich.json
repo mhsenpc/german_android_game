@@ -61,7 +61,7 @@
       "sentence": "ich .... gestern müde ....",
       "options": ["war", "bin", "habe", "hatte"],
       "answer": "war",
-      "hint": "برای صفت در گذشته از Präteritum استفاده می‌کنیم، ich war müde (من خسته بودم)"
+      "hint": "برای صفت در گذشته از Präteritum فعل sein استفاده می‌کنیم، ich war müde (من خسته بودم)"
     },
     {
       "sentence": "du .... das Fenster geöffnet",
@@ -79,7 +79,7 @@
       "sentence": "er .... viel Geld ....",
       "options": ["hatte", "war", "ist", "hat"],
       "answer": "hatte",
-      "hint": "برای داشتن در گذشته از Präteritum استفاده می‌کنیم، er hatte Geld (او پول داشت)"
+      "hint": "برای داشتن در گذشته از Präteritum فعل haben استفاده می‌کنیم، er hatte Geld (او پول داشت)"
     },
     {
       "sentence": "sie .... gestern angekommen",

@@ -24,7 +24,7 @@
       "sentence": "ich kaufe fünf ....",
       "options": ["Äpfel", "Apfel", "Apfels", "Äpfele"],
       "answer": "Äpfel",
-      "hint": "کلمه Apfel در حالت جمع به Äpfel تبدیل می‌شود (تغییر حرف صدادار)"
+      "hint": "کلمه Apfel در حالت جمع به Äpfel تبدیل می‌شود (تغییر به اوملوت - Umlaut)"
     },
     {
       "sentence": "die .... arbeiten hier",
@@ -42,7 +42,7 @@
       "sentence": "ich höre die ....",
       "options": ["Vögel", "Vogel", "Vogels", "Vögele"],
       "answer": "Vögel",
-      "hint": "کلمه Vogel در حالت جمع به Vögel تبدیل می‌شود (تغییر حرف صدادار)"
+      "hint": "کلمه Vogel در حالت جمع به Vögel تبدیل می‌شود (تغییر به اوملوت - Umlaut)"
     },
     {
       "sentence": "die .... sind rot",
@@ -66,7 +66,7 @@
       "sentence": "die .... sind klein",
       "options": ["Mäuse", "Maus", "Mauses", "Mäusee"],
       "answer": "Mäuse",
-      "hint": "کلمه Maus در حالت جمع به Mäuse تبدیل می‌شود (تغییر حرف صدادار + e)"
+      "hint": "کلمه Maus در حالت جمع به Mäuse تبدیل می‌شود (اوملوت + پایانه -e)"
     },
     {
       "sentence": "wir besuchen unsere ....",
@@ -84,7 +84,7 @@
       "sentence": "die .... fahren schnell",
       "options": ["Züge", "Zug", "Zuges", "Zügee"],
       "answer": "Züge",
-      "hint": "کلمه Zug در حالت جمع به Züge تبدیل می‌شود (تغییر حرف صدادار + e)"
+      "hint": "کلمه Zug در حالت جمع به Züge تبدیل می‌شود (اوملوت + پایانه -e)"
     },
     {
       "sentence": "wir kaufen neue ....",

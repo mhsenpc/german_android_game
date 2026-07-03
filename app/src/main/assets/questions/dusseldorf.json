@@ -19,7 +19,7 @@
       "sentence": "ich kaufe .... Buch",
       "options": ["ein", "eine", "der", "die"],
       "answer": "ein",
-      "hint": "کلمه Buch خنثی است (das Buch)، فعل kaufe حالت مفعولی می‌خواهد اما ein تغییر نمی‌کند"
+      "hint": "کلمه Buch خنثی است (das Buch)، اسامی خنثی در حالت مفعولی ein تغییر نمی‌کند"
     },
     {
       "sentence": ".... Katze schläft auf dem Sofa",
@@ -67,7 +67,7 @@
       "sentence": "ich sehe .... Baum im Garten",
       "options": ["einen", "eine", "ein", "der"],
       "answer": "einen",
-      "hint": "کلمه Baum مذکر است (der Baum) و فعل sehe حالت مفعولی می‌خواهد، پس ein به einen تبدیل می‌شود"
+      "hint": "کلمه Baum مذکر است (der Baum)، اسامی مذکر در حالت مفعولی ein به einen تبدیل می‌شود"
     },
     {
       "sentence": ".... Frau kocht das Essen",
