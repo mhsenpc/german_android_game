@@ -1,6 +1,7 @@
 package sibpardazan.gharb.satzpuzzle
 
 import android.content.Intent
+import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -22,7 +23,8 @@ class LevelPickerActivity : AppCompatActivity() {
         Triple(5, R.string.cologne_key, R.string.cologne),
         Triple(6, R.string.frankfurt_key, R.string.frankfurt),
         Triple(7, R.string.stuttgart_key, R.string.stuttgart),
-        Triple(8, R.string.munich_key, R.string.munich)
+        Triple(8, R.string.munich_key, R.string.munich),
+        Triple(9, R.string.dresden_key, R.string.dresden)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,6 +36,27 @@ class LevelPickerActivity : AppCompatActivity() {
         setupLevelClickListeners()
         updateLevelStates()
         updateScoreDisplay()
+        loadCityBackgroundInto("dresden", binding.level9Icon, 144)
+    }
+
+    /**
+     * Loads a city background PNG from assets and shows it as a small thumbnail.
+     * Used for Dresden (no dedicated marker drawable); reuses the background image.
+     */
+    private fun loadCityBackgroundInto(city: String, view: android.widget.ImageView, targetPx: Int) {
+        try {
+            val path = "images/backgrounds/$city.png"
+            val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+            assets.open(path).use { BitmapFactory.decodeStream(it, null, bounds) }
+            var sample = 1
+            while (bounds.outWidth / sample > targetPx) sample *= 2
+            val opts = BitmapFactory.Options().apply { inSampleSize = sample }
+            assets.open(path).use { stream ->
+                view.setImageBitmap(BitmapFactory.decodeStream(stream, null, opts))
+            }
+        } catch (_: Exception) {
+            // Background missing — leave the ImageView empty.
+        }
     }
 
     private fun setupLevelClickListeners() {
@@ -93,6 +116,13 @@ class LevelPickerActivity : AppCompatActivity() {
             }
         }
 
+        // Level 9 - Dresden
+        binding.level9Container.setOnClickListener {
+            if (progressionManager.isLevelUnlocked(9)) {
+                startQuizActivity(getString(levels[8].second), 9)
+            }
+        }
+
       }
 
     private fun startQuizActivity(city: String, level: Int) {
@@ -143,6 +173,7 @@ class LevelPickerActivity : AppCompatActivity() {
             5 -> binding.level6Lock
             6 -> binding.level7Lock
             7 -> binding.level8Lock
+            8 -> binding.level9Lock
             else -> binding.level1Lock
         }
     }
@@ -157,6 +188,7 @@ class LevelPickerActivity : AppCompatActivity() {
             5 -> binding.level6Container
             6 -> binding.level7Container
             7 -> binding.level8Container
+            8 -> binding.level9Container
             else -> binding.level1Container
         }
     }

@@ -531,7 +531,7 @@
                 </FrameLayout>
             </LinearLayout>
 
-            <!-- ===== ROW 3 (RTL: Munich · Stuttgart · spacer) ===== -->
+            <!-- ===== ROW 3 (RTL: Munich · Stuttgart · Dresden) ===== -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -674,12 +674,73 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </FrameLayout>
 
-                <!-- Spacer to keep grid alignment -->
-                <View
+                <!-- Level 9 - Dresden -->
+                <FrameLayout
+                    android:id="@+id/level9Container"
                     android:layout_width="116dp"
                     android:layout_height="156dp"
                     android:layout_margin="10dp"
-                    android:visibility="invisible" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:background="@drawable/home_card_surface"
+                    android:elevation="4dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/home_level_badge_bg"
+                            android:gravity="center"
+                            android:text="9"
+                            android:textColor="@color/home_badge_text"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/level9Icon"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:layout_marginTop="30dp"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="ContentDescription" />
+
+                        <ImageView
+                            android:id="@+id/level9Lock"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:src="@drawable/ic_lock"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/level9Name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="14dp"
+                            android:text="@string/dresden"
+                            android:textColor="@color/home_text_primary"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </FrameLayout>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

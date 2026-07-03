@@ -1,0 +1,127 @@
+{
+  "level": 9,
+  "city": "Dresden",
+  "background": "images/backgrounds/dresden.png",
+  "questions": [
+    {
+      "sentence": "Wenn ich mehr Zeit ...., würde ich öfter reisen",
+      "options": ["hätte", "habe", "hatte", "haben würde"],
+      "answer": "hätte",
+      "hint": "در Konjunktiv II (شرط غیر واقعی) فعل haben به صورت hätte درمی‌آید"
+    },
+    {
+      "sentence": "Das Haus .... im 18. Jahrhundert gebaut",
+      "options": ["wurde", "wird", "war", "ist worden"],
+      "answer": "wurde",
+      "hint": "مجهول گذشته (Passiv Präteritum) با wurde + Partizip II ساخته می‌شود"
+    },
+    {
+      "sentence": "Der Film .... gerade in vielen Kinos gezeigt",
+      "options": ["wird", "wurde", "ist", "hat"],
+      "answer": "wird",
+      "hint": "مجهول حال (Passiv Präsens) با wird + Partizip II ساخته می‌شود"
+    },
+    {
+      "sentence": "Die Frau, .... dort steht, ist meine Lehrerin",
+      "options": ["die", "der", "den", "deren"],
+      "answer": "die",
+      "hint": "ضمیر نسبی برای فاعل مؤنث در حالت فاعلی (Nominativ)die است"
+    },
+    {
+      "sentence": "Der Mann, .... Auto gestohlen wurde, erstattet Anzeige",
+      "options": ["dessen", "sein", "dem", "wen"],
+      "answer": "dessen",
+      "hint": "برای مالکیت مذکر/neutrum در relative clause از dessen استفاده می‌کنیم"
+    },
+    {
+      "sentence": "Das Kind, mit .... ich spiele, heißt Max",
+      "options": ["dem", "der", "die", "den"],
+      "answer": "dem",
+      "hint": "حرف اضافه mit حالت Dativ می‌خواهد؛ ضمیر نسبی neutrum/maskulin در Dativ: dem"
+    },
+    {
+      "sentence": ".... du mich gestern angerufen hättest, wäre ich gekommen",
+      "options": ["Hättest", "Hast", "Hattest", "Würdest"],
+      "answer": "Hättest",
+      "hint": "در شرط غیر واقعی گذشته بدون wenn، فعل صرف‌شده (hättest) به ابتدا می‌آید"
+    },
+    {
+      "sentence": "Ich freue mich darauf, dich bald ....",
+      "options": ["wiederzusehen", "zu wiedersehen", "wiedersehen", "gesehen"],
+      "answer": "wiederzusehen",
+      "hint": "برای افعال جداشدنی zu بین پیشوند و فعل قرار می‌گیرد: wieder + zu + sehen"
+    },
+    {
+      "sentence": ".... des schlechten Wetters fiel das Spiel aus",
+      "options": ["Wegen", "Trotz", "Während", "Aufgrund"],
+      "answer": "Wegen",
+      "hint": "حرف اضافه wegen همیشه حالت Genitiv می‌خواهد (des schlechten Wetters)"
+    },
+    {
+      "sentence": "Anstatt sich ...., hat er den ganzen Tag geschlafen",
+      "options": ["anzustrengen", "anzustrengt", "zu anstrengen", "anstrengte"],
+      "answer": "anzustrengen",
+      "hint": "بعد از anstatt، فعل جداشدنی با zu: an + zu + strengen"
+    },
+    {
+      "sentence": "Ohne ein Wort ...., verließ sie den Raum",
+      "options": ["zu sagen", "sagen", "gesagt", "sagte"],
+      "answer": "zu sagen",
+      "hint": "بعد از ohne، فعل با zu + Infinitiv می‌آید: zu sagen"
+    },
+    {
+      "sentence": "Die Rechnung muss bis morgen ....",
+      "options": ["bezahlt werden", "bezahlen", "bezahlt", "zu bezahlen"],
+      "answer": "bezahlt werden",
+      "hint": "باید پرداخت شود → مجهول با فعل مدل: Partizip II + werden"
+    },
+    {
+      "sentence": "Je .... ich lerne, desto bessere Noten bekomme ich",
+      "options": ["mehr", "mehrere", "vielen", "viel"],
+      "answer": "mehr",
+      "hint": "در ساختار je ... desto از je mehr (کمپراتیو viel) استفاده می‌کنیم"
+    },
+    {
+      "sentence": "Er tut so, .... er der Chef wäre",
+      "options": ["als ob", "wie", "dass", "weil"],
+      "answer": "als ob",
+      "hint": "برای مقایسه غیر واقعی از als ob + Konjunktiv II استفاده می‌کنیم"
+    },
+    {
+      "sentence": "Das ist das .... Buch, das ich je gelesen habe",
+      "options": ["beste", "bessere", "gute", "guten"],
+      "answer": "beste",
+      "hint": "بعد از das (معرفه) + صفت در حالت Superlativ: beste"
+    },
+    {
+      "sentence": "Während ich ...., kochte meine Mutter das Essen",
+      "options": ["lernte", "gelernt", "lerne", "lernen"],
+      "answer": "lernte",
+      "hint": "در Nebensatz با während فعل در پایان و در زمان گذشته (Präteritum): lernte"
+    },
+    {
+      "sentence": "Obwohl es stark ...., gingen wir spazieren",
+      "options": ["regnete", "regnet", "geregnet", "regnen"],
+      "answer": "regnete",
+      "hint": "در Nebensatz با obwohl فعل در پایان و در Präteritum: regnete"
+    },
+    {
+      "sentence": "Es ist wichtig, .... man pünktlich ankommt",
+      "options": ["dass", "ob", "wenn", "als"],
+      "answer": "dass",
+      "hint": "برای بیان یک واقعیت مهم در جمله فرعی از dass استفاده می‌کنیم"
+    },
+    {
+      "sentence": "Ich interessiere mich sehr .... deutsche Kultur",
+      "options": ["für", "an", "auf", "über"],
+      "answer": "für",
+      "hint": "فعل reflexiv sich interessieren حرف اضافه für را حکم می‌کند"
+    },
+    {
+      "sentence": "Würdest du mir bitte ...., wenn ich dich frage?",
+      "options": ["helfen", "geholfen", "hilfst", "zu helfen"],
+      "answer": "helfen",
+      "hint": "بعد ازwürdest از Infinitiv (شکل پایه فعل) بدون zu استفاده می‌کنیم"
+    }
+  ]
+}
