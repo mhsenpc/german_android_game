@@ -107,16 +107,17 @@
             android:orientation="vertical"
             android:paddingBottom="28dp">
 
-            <!-- ===== ROW 1 (RTL: Leipzig · Berlin · Hamburg) ===== -->
+            <!-- ===== ROW 1 (LTR: Hamburg · Berlin · Leipzig) ===== -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layoutDirection="ltr">
 
-                <!-- Level 3 - Leipzig -->
+                <!-- Level 1 - Hamburg -->
                 <FrameLayout
-                    android:id="@+id/level3Container"
+                    android:id="@+id/level1Container"
                     android:layout_width="116dp"
                     android:layout_height="156dp"
                     android:layout_margin="10dp"
@@ -137,7 +138,7 @@
                             android:layout_marginTop="10dp"
                             android:background="@drawable/home_level_badge_bg"
                             android:gravity="center"
-                            android:text="3"
+                            android:text="1"
                             android:textColor="@color/home_badge_text"
                             android:textSize="13sp"
                             android:textStyle="bold"
@@ -145,16 +146,17 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <ImageView
-                            android:id="@+id/level3Icon"
+                            android:id="@+id/level1Icon"
                             android:layout_width="72dp"
                             android:layout_height="72dp"
-                            android:layout_marginTop="30dp"                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="30dp"
+                            app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="ContentDescription" />
 
                         <ImageView
-                            android:id="@+id/level3Lock"
+                            android:id="@+id/level1Lock"
                             android:layout_width="34dp"
                             android:layout_height="34dp"
                             android:src="@drawable/ic_lock"
@@ -166,11 +168,11 @@
                             tools:ignore="ContentDescription" />
 
                         <TextView
-                            android:id="@+id/level3Name"
+                            android:id="@+id/level1Name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="14dp"
-                            android:text="@string/leipzig"
+                            android:text="@string/hamburg"
                             android:textColor="@color/home_text_primary"
                             android:textSize="14sp"
                             android:textStyle="bold"
@@ -214,7 +216,8 @@
                             android:id="@+id/level2Icon"
                             android:layout_width="72dp"
                             android:layout_height="72dp"
-                            android:layout_marginTop="30dp"                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="30dp"
+                            app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="ContentDescription" />
@@ -246,9 +249,9 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </FrameLayout>
 
-                <!-- Level 1 - Hamburg -->
+                <!-- Level 3 - Leipzig -->
                 <FrameLayout
-                    android:id="@+id/level1Container"
+                    android:id="@+id/level3Container"
                     android:layout_width="116dp"
                     android:layout_height="156dp"
                     android:layout_margin="10dp"
@@ -269,7 +272,7 @@
                             android:layout_marginTop="10dp"
                             android:background="@drawable/home_level_badge_bg"
                             android:gravity="center"
-                            android:text="1"
+                            android:text="3"
                             android:textColor="@color/home_badge_text"
                             android:textSize="13sp"
                             android:textStyle="bold"
@@ -277,16 +280,17 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <ImageView
-                            android:id="@+id/level1Icon"
+                            android:id="@+id/level3Icon"
                             android:layout_width="72dp"
                             android:layout_height="72dp"
-                            android:layout_marginTop="30dp"                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="30dp"
+                            app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="ContentDescription" />
 
                         <ImageView
-                            android:id="@+id/level1Lock"
+                            android:id="@+id/level3Lock"
                             android:layout_width="34dp"
                             android:layout_height="34dp"
                             android:src="@drawable/ic_lock"
@@ -298,11 +302,11 @@
                             tools:ignore="ContentDescription" />
 
                         <TextView
-                            android:id="@+id/level1Name"
+                            android:id="@+id/level3Name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="14dp"
-                            android:text="@string/hamburg"
+                            android:text="@string/leipzig"
                             android:textColor="@color/home_text_primary"
                             android:textSize="14sp"
                             android:textStyle="bold"
@@ -313,16 +317,17 @@
                 </FrameLayout>
             </LinearLayout>
 
-            <!-- ===== ROW 2 (RTL: Frankfurt · Cologne · Düsseldorf) ===== -->
+            <!-- ===== ROW 2 (LTR: Düsseldorf · Cologne · Frankfurt) ===== -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layoutDirection="ltr">
 
-                <!-- Level 6 - Frankfurt -->
+                <!-- Level 4 - Düsseldorf -->
                 <FrameLayout
-                    android:id="@+id/level6Container"
+                    android:id="@+id/level4Container"
                     android:layout_width="116dp"
                     android:layout_height="156dp"
                     android:layout_margin="10dp"
@@ -343,7 +348,7 @@
                             android:layout_marginTop="10dp"
                             android:background="@drawable/home_level_badge_bg"
                             android:gravity="center"
-                            android:text="6"
+                            android:text="4"
                             android:textColor="@color/home_badge_text"
                             android:textSize="13sp"
                             android:textStyle="bold"
@@ -351,16 +356,17 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <ImageView
-                            android:id="@+id/level6Icon"
+                            android:id="@+id/level4Icon"
                             android:layout_width="72dp"
                             android:layout_height="72dp"
-                            android:layout_marginTop="30dp"                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="30dp"
+                            app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="ContentDescription" />
 
                         <ImageView
-                            android:id="@+id/level6Lock"
+                            android:id="@+id/level4Lock"
                             android:layout_width="34dp"
                             android:layout_height="34dp"
                             android:src="@drawable/ic_lock"
@@ -372,11 +378,11 @@
                             tools:ignore="ContentDescription" />
 
                         <TextView
-                            android:id="@+id/level6Name"
+                            android:id="@+id/level4Name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="14dp"
-                            android:text="@string/frankfurt"
+                            android:text="@string/dusseldorf"
                             android:textColor="@color/home_text_primary"
                             android:textSize="14sp"
                             android:textStyle="bold"
@@ -420,7 +426,8 @@
                             android:id="@+id/level5Icon"
                             android:layout_width="72dp"
                             android:layout_height="72dp"
-                            android:layout_marginTop="30dp"                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="30dp"
+                            app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="ContentDescription" />
@@ -452,9 +459,9 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </FrameLayout>
 
-                <!-- Level 4 - Düsseldorf -->
+                <!-- Level 6 - Frankfurt -->
                 <FrameLayout
-                    android:id="@+id/level4Container"
+                    android:id="@+id/level6Container"
                     android:layout_width="116dp"
                     android:layout_height="156dp"
                     android:layout_margin="10dp"
@@ -475,7 +482,7 @@
                             android:layout_marginTop="10dp"
                             android:background="@drawable/home_level_badge_bg"
                             android:gravity="center"
-                            android:text="4"
+                            android:text="6"
                             android:textColor="@color/home_badge_text"
                             android:textSize="13sp"
                             android:textStyle="bold"
@@ -483,16 +490,17 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <ImageView
-                            android:id="@+id/level4Icon"
+                            android:id="@+id/level6Icon"
                             android:layout_width="72dp"
                             android:layout_height="72dp"
-                            android:layout_marginTop="30dp"                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="30dp"
+                            app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="ContentDescription" />
 
                         <ImageView
-                            android:id="@+id/level4Lock"
+                            android:id="@+id/level6Lock"
                             android:layout_width="34dp"
                             android:layout_height="34dp"
                             android:src="@drawable/ic_lock"
@@ -504,11 +512,11 @@
                             tools:ignore="ContentDescription" />
 
                         <TextView
-                            android:id="@+id/level4Name"
+                            android:id="@+id/level6Name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="14dp"
-                            android:text="@string/dusseldorf"
+                            android:text="@string/frankfurt"
                             android:textColor="@color/home_text_primary"
                             android:textSize="14sp"
                             android:textStyle="bold"
@@ -519,78 +527,13 @@
                 </FrameLayout>
             </LinearLayout>
 
-            <!-- ===== ROW 3 (RTL: Munich · Stuttgart · Dresden) ===== -->
+            <!-- ===== ROW 3 (LTR: Stuttgart · Munich · Dresden) ===== -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="horizontal">
-
-                <!-- Level 8 - Munich -->
-                <FrameLayout
-                    android:id="@+id/level8Container"
-                    android:layout_width="116dp"
-                    android:layout_height="156dp"
-                    android:layout_margin="10dp"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:background="@drawable/home_card_surface"
-                    android:elevation="4dp">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <TextView
-                            android:layout_width="28dp"
-                            android:layout_height="28dp"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="10dp"
-                            android:background="@drawable/home_level_badge_bg"
-                            android:gravity="center"
-                            android:text="8"
-                            android:textColor="@color/home_badge_text"
-                            android:textSize="13sp"
-                            android:textStyle="bold"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <ImageView
-                            android:id="@+id/level8Icon"
-                            android:layout_width="72dp"
-                            android:layout_height="72dp"
-                            android:layout_marginTop="30dp"                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            tools:ignore="ContentDescription" />
-
-                        <ImageView
-                            android:id="@+id/level8Lock"
-                            android:layout_width="34dp"
-                            android:layout_height="34dp"
-                            android:src="@drawable/ic_lock"
-                            android:visibility="gone"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            tools:ignore="ContentDescription" />
-
-                        <TextView
-                            android:id="@+id/level8Name"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="14dp"
-                            android:text="@string/munich"
-                            android:textColor="@color/home_text_primary"
-                            android:textSize="14sp"
-                            android:textStyle="bold"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </FrameLayout>
+                android:orientation="horizontal"
+                android:layoutDirection="ltr">
 
                 <!-- Level 7 - Stuttgart -->
                 <FrameLayout
@@ -626,7 +569,8 @@
                             android:id="@+id/level7Icon"
                             android:layout_width="72dp"
                             android:layout_height="72dp"
-                            android:layout_marginTop="30dp"                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="30dp"
+                            app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="ContentDescription" />
@@ -649,6 +593,73 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="14dp"
                             android:text="@string/stuttgart"
+                            android:textColor="@color/home_text_primary"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </FrameLayout>
+
+                <!-- Level 8 - Munich -->
+                <FrameLayout
+                    android:id="@+id/level8Container"
+                    android:layout_width="116dp"
+                    android:layout_height="156dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:background="@drawable/home_card_surface"
+                    android:elevation="4dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/home_level_badge_bg"
+                            android:gravity="center"
+                            android:text="8"
+                            android:textColor="@color/home_badge_text"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/level8Icon"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:layout_marginTop="30dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="ContentDescription" />
+
+                        <ImageView
+                            android:id="@+id/level8Lock"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:src="@drawable/ic_lock"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/level8Name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="14dp"
+                            android:text="@string/munich"
                             android:textColor="@color/home_text_primary"
                             android:textSize="14sp"
                             android:textStyle="bold"
