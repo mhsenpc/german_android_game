@@ -109,7 +109,7 @@ Questions, options, and answers are stored in a JSON file.
 {
   "level": 2,
   "city": "Berlin",
-  "background": "images/backgrounds/berlin.png",
+  "background": "images/cities/berlin.png",
   "questions": [
     {
       "sentence": "ich .... in Berlin",
@@ -123,7 +123,7 @@ Questions, options, and answers are stored in a JSON file.
 
 **Background Loading:**
 - Each quiz activity must load the background image from the JSON file's "background" field
-- The background path (e.g., "images/backgrounds/berlin.png") should be loaded dynamically for each level
+- The background path (e.g., "images/cities/berlin.png") should be loaded dynamically for each level
 - Apply the background image to the quiz activity layout when the level starts
 
 ## Extra Features
@@ -135,7 +135,7 @@ Questions, options, and answers are stored in a JSON file.
 
 ### City Progression
 - on background use images/map.png
-- show different cities by their image in images/backgrounds/*.png
+- show different cities by their image in images/cities/*.png
 - locked cities should be shown as a lock icon(create a drawable for lock icon)
 
 ## Tech Stack

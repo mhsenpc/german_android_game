@@ -1,7 +1,7 @@
 {
   "level": 8,
   "city": "Munich",
-  "background": "images/backgrounds/munich.png",
+  "background": "images/cities/munich.png",
   "questions": [
     {
       "sentence": "gestern .... ich Fußball gespielt",

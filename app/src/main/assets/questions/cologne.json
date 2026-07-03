@@ -1,6 +1,7 @@
 {
   "level": 5,
   "city": "Cologne",
+  "background": "images/cities/cologne.png",
   "questions": [
     {
       "sentence": "ich sehe zwei ....",

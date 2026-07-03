@@ -1,7 +1,7 @@
 {
   "level": 1,
   "city": "Hamburg",
-  "background": "images/backgrounds/hamburg.png",
+  "background": "images/cities/hamburg.png",
   "questions": [
     {
       "sentence": "ich möchte .... gehen",

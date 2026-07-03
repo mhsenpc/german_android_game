@@ -1,7 +1,7 @@
 {
   "level": 9,
   "city": "Dresden",
-  "background": "images/backgrounds/dresden.png",
+  "background": "images/cities/dresden.png",
   "questions": [
     {
       "sentence": "Wenn ich mehr Zeit ...., würde ich öfter reisen",

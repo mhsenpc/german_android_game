@@ -1,7 +1,7 @@
 {
   "level": 6,
   "city": "Frankfurt",
-  "background": "images/backgrounds/frankfurt.png",
+  "background": "images/cities/frankfurt.png",
   "questions": [
     {
       "sentence": "ich gehe .... Schule",

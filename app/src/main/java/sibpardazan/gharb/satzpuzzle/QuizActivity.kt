@@ -61,14 +61,18 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             }
             questions = questionList
 
-            loadBackgroundImage(jsonObject.getString("background"))
+            loadBackgroundImage(jsonObject.optString("background", null))
         } catch (e: Exception) {
             Toast.makeText(this, getString(R.string.error_loading_questions), Toast.LENGTH_SHORT).show()
             finish()
         }
     }
 
-    private fun loadBackgroundImage(backgroundPath: String) {
+    private fun loadBackgroundImage(backgroundPath: String?) {
+        if (backgroundPath.isNullOrEmpty()) {
+            binding.backgroundImage.setImageResource(R.drawable.default_background)
+            return
+        }
         try {
             val assetManager = assets
             val inputStream = assetManager.open(backgroundPath)

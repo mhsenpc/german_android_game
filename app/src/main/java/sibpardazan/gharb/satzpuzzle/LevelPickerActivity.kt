@@ -36,16 +36,25 @@ class LevelPickerActivity : AppCompatActivity() {
         setupLevelClickListeners()
         updateLevelStates()
         updateScoreDisplay()
-        loadCityBackgroundInto("dresden", binding.level9Icon, 144)
+        loadCityIcon("hamburg", binding.level1Icon)
+        loadCityIcon("berlin", binding.level2Icon)
+        loadCityIcon("leipzig", binding.level3Icon)
+        loadCityIcon("dusseldorf", binding.level4Icon)
+        loadCityIcon("cologne", binding.level5Icon)
+        loadCityIcon("frankfurt", binding.level6Icon)
+        loadCityIcon("stuttgart", binding.level7Icon)
+        loadCityIcon("munich", binding.level8Icon)
+        loadCityIcon("dresden", binding.level9Icon)
     }
 
     /**
-     * Loads a city background PNG from assets and shows it as a small thumbnail.
-     * Used for Dresden (no dedicated marker drawable); reuses the background image.
+     * Loads a city image from assets and shows it as the level icon.
+     * The same image is also used as the quiz background.
      */
-    private fun loadCityBackgroundInto(city: String, view: android.widget.ImageView, targetPx: Int) {
+    private fun loadCityIcon(city: String, view: android.widget.ImageView) {
+        val targetPx = 144
         try {
-            val path = "images/backgrounds/$city.png"
+            val path = "images/cities/$city.png"
             val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
             assets.open(path).use { BitmapFactory.decodeStream(it, null, bounds) }
             var sample = 1
