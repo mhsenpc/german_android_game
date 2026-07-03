@@ -133,8 +133,9 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         // Reset button styles to default
         resetButtonStyles()
-        
+
         enableAnswerButtons(true)
+        updateProgress()
     }
 
     private fun checkAnswer(selectedOption: Int) {
@@ -220,7 +221,14 @@ class QuizActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private fun updateUI() {
         updateScore()
         updateHearts()
+        updateProgress()
         binding.levelTextView.text = getString(R.string.level, currentLevel, currentCity.replaceFirstChar { it.uppercase() })
+    }
+
+    private fun updateProgress() {
+        val answered = usedQuestions.size
+        val total = questions.size
+        binding.progressTextView.text = getString(R.string.progress_format, answered, total)
     }
 
     private fun speakQuestion() {
